@@ -1,6 +1,4 @@
----
-title: Data and Code Access Portal for the dl20 Project
----
+# Data and Code Access Portal for the dl20 Project
 
 This repository collates links to code and data generated as part of **Teasdale
 and Murray *et al.* (2025)**. We are in the process of exporting our
