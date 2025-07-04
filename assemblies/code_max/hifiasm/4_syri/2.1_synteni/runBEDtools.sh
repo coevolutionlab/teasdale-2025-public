@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bedtools multiinter -i at*wga.syn.block.txt -names at6137 at6923 at6929 at7143 at8285 at9104 at9336 at9503 at9578 at9744 at9762 at9806 at9830 at9847 at9852 at9879 at9883 at9900 > Col.syn.txt
