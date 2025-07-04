@@ -1,0 +1,2 @@
+file                           format  type  num_seqs        sum_len  min_len  avg_len  max_len
+intergenic_region_filtered.fa  FASTA   DNA    221,085  1,467,010,906    1,000  6,635.5  136,075

@@ -1,0 +1,4 @@
+ATSINE4	TEsorter	CDS	84	515	0.39	+	.	ID=ATSINE4|AtSB6;Name=SINE-SINE;gene=SINE;clade=SINE;coverage=72.5;evalue=1.4e-43;probability=0.77
+RathE1_cons	TEsorter	CDS	210	459	0.11	+	.	ID=RathE1_cons|AtSB2;Name=SINE-SINE;gene=SINE;clade=SINE;coverage=83.9;evalue=7.2e-06;probability=0.57
+RathE2_cons	TEsorter	CDS	54	512	0.5	+	.	ID=RathE2_cons|AtSB3;Name=SINE-SINE;gene=SINE;clade=SINE;coverage=99.7;evalue=4e-47;probability=0.74
+RathE3_cons	TEsorter	CDS	106	300	0.52	+	.	ID=RathE3_cons|AtSB4;Name=SINE-SINE;gene=SINE;clade=SINE;coverage=90.7;evalue=7.5e-26;probability=0.82

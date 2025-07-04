@@ -1,0 +1,59 @@
+==================================================
+file name: pangenome.fasta.mod.RepeatModeler.raw.fa
+sequences:           710
+total length:    6537588 bp  (6446101 bp excl N/X-runs)
+GC level:         36.88 %
+bases masked:      62964 bp ( 0.96 %)
+==================================================
+               number of      length   percentage
+               elements*    occupied  of sequence
+--------------------------------------------------
+Retroelements           86         8101 bp    0.12 %
+   SINEs:                0            0 bp    0.00 %
+   Penelope              0            0 bp    0.00 %
+   LINEs:                0            0 bp    0.00 %
+    CRE/SLACS            0            0 bp    0.00 %
+     L2/CR1/Rex          0            0 bp    0.00 %
+     R1/LOA/Jockey       0            0 bp    0.00 %
+     R2/R4/NeSL          0            0 bp    0.00 %
+     RTE/Bov-B           0            0 bp    0.00 %
+     L1/CIN4             0            0 bp    0.00 %
+   LTR elements:        86         8101 bp    0.12 %
+     BEL/Pao             0            0 bp    0.00 %
+     Ty1/Copia          38         3085 bp    0.05 %
+     Gypsy/DIRS1        33         3428 bp    0.05 %
+       Retroviral        0            0 bp    0.00 %
+
+DNA transposons        392        54541 bp    0.83 %
+   hobo-Activator        0            0 bp    0.00 %
+   Tc1-IS630-Pogo        0            0 bp    0.00 %
+   En-Spm                0            0 bp    0.00 %
+   MuDR-IS905            0            0 bp    0.00 %
+   PiggyBac              0            0 bp    0.00 %
+   Tourist/Harbinger     0            0 bp    0.00 %
+   Other (Mirage,        0            0 bp    0.00 %
+    P-element, Transib)
+
+Rolling-circles          0            0 bp    0.00 %
+
+Unclassified:            4          322 bp    0.00 %
+
+Total interspersed repeats:       62964 bp    0.96 %
+
+
+Small RNA:               0            0 bp    0.00 %
+
+Satellites:              0            0 bp    0.00 %
+Simple repeats:          0            0 bp    0.00 %
+Low complexity:          0            0 bp    0.00 %
+==================================================
+
+* most repeats fragmented by insertions or deletions
+  have been counted as one element
+                                                      
+
+RepeatMasker version 4.1.1 , quick mode
+                                          
+run with rmblastn version 2.10.0+
+The query was compared to classified sequences in "pangenome.fasta.mod.LTR.TIR.Helitron.fa.stg1"
+

@@ -1,0 +1,321 @@
+#TE	Order	Superfamily	Clade	Complete	Strand	Domains
+TE_00000506_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	-	GAG|Reina
+TE_00001619_INT#LTR/Copia	LTR	Copia	Ale	no	+	PROT|Ale
+TE_00001621_INT#LTR/Copia	LTR	Copia	Ale	no	+	PROT|Ale
+TE_00001696_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00001771_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina
+TE_00001816_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	CHDCR|CRM
+TE_00001840_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00001969_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002029_INT#LTR/Copia	LTR	Copia	Ale	no	+	GAG|Ale
+TE_00002086_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002146_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002156_INT#LTR/Copia	LTR	Copia	Ale	no	+	GAG|Ale
+TE_00002166_INT#LTR/Copia	LTR	Copia	Tork	no	+	GAG|Tork
+TE_00002188_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002255_INT#LTR/Copia	LTR	Copia	Ale	no	+	GAG|Ale PROT|Ale
+TE_00002285_INT#LTR/Copia	LTR	Gypsy	Tekay	no	+	CHD|Tekay
+TE_00002293_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002303_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002314_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002349_INT#LTR/unknown	LTR	Gypsy	Reina	no	-	GAG|Reina
+TE_00002364_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002368_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002452_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002479_LTR#LTR/Gypsy	LTR	Gypsy	CRM	no	-	CHDCR|CRM
+TE_00002482_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002549_INT#LTR/unknown	LTR	Gypsy	CRM	no	-	GAG|CRM
+TE_00002578_INT#LTR/unknown	LTR	Gypsy	CRM	no	-	GAG|CRM
+TE_00002588_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002725_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina CHD|Reina
+TE_00002760_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002775_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina CHD|Reina
+TE_00002794_INT#LTR/Copia	LTR	Copia	Ale	no	+	GAG|Ale
+TE_00002822_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00002894_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina
+TE_00002952_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002980_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00002981_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	-	GAG|Reina PROT|Reina
+TE_00003014_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM PROT|CRM
+TE_00003033_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00003067_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina
+TE_00003168_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00003184_INT#LTR/Copia	LTR	Copia	Ale	no	+	GAG|Ale PROT|Ale
+TE_00003189_INT#LTR/Copia	LTR	Copia	Ikeros	no	+	GAG|Ikeros PROT|Ikeros
+TE_00003254_INT#LTR/Copia	LTR	Copia	Ale	no	+	PROT|Ale
+TE_00003365_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00003457_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM PROT|CRM
+TE_00003505_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina CHD|Reina
+TE_00003525_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+TE_00003533_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina CHD|Reina
+TE_00003565_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00003625_INT#LTR/unknown	LTR	Copia	TAR	no	+	PROT|TAR
+TE_00003631_INT#LTR/Copia	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00003664_INT#LTR/Copia	LTR	Copia	Tork	no	+	GAG|Tork
+TE_00003669_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	PROT|Reina
+TE_00003790_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	PROT|Reina
+TE_00003846_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina CHD|Reina
+TE_00003898_INT#LTR/Copia	LTR	Copia	TAR	no	+	GAG|TAR
+TE_00004003_INT#LTR/Copia	LTR	Copia	Alesia	no	+	GAG|Alesia PROT|Alesia
+TE_00004026_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	PROT|Reina
+TE_00004141_INT#LTR/unknown	LTR	Gypsy	Reina	no	-	GAG|Reina
+TE_00004175_INT#LTR/Gypsy	LTR	Gypsy	CRM	no	+	GAG|CRM
+TE_00004189_INT#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina PROT|Reina
+cluster_101#LTR/unknown	LTR	Gypsy	CRM	no	-	CHDCR|CRM
+cluster_102#LTR/Gypsy	LTR	Gypsy	Retand	yes	-	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_103#LTR/Gypsy	LTR	Gypsy	Retand	no	+	GAG|Retand PROT|Retand RT|Retand aRH|Retand INT|Retand
+cluster_1034#LTR/Copia	LTR	Copia	Ale	no	+	RT|Ale RH|Ale
+cluster_106#LTR/Gypsy	LTR	Gypsy	Retand	no	-	GAG|Retand PROT|Retand RT|Retand aRH|Retand INT|Retand
+cluster_1064#LTR/unknown	LTR	Copia	Ivana	no	+	PROT|Ivana
+cluster_107#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_111#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_127#LTR/Copia	LTR	Copia	Alesia	yes	+	GAG|Alesia PROT|Alesia INT|Alesia RT|Alesia RH|Alesia
+cluster_133#LTR/unknown	LTR	Gypsy	Reina	no	-	GAG|Reina RH|Reina CHD|Reina PROT|Ale INT|Ale RT|Ale
+cluster_139#LTR/Gypsy	LTR	Gypsy	Athila	no	+	GAG|Athila PROT|Athila
+cluster_146#LTR/Copia	LTR	Copia	SIRE	yes	+	GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+cluster_158#LTR/Gypsy	LTR	Gypsy	Tekay	yes	-	GAG|Tekay PROT|Tekay RT|Tekay RH|Tekay INT|Tekay CHD|Tekay
+cluster_163#LTR/Copia	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_173#LTR/Gypsy	LTR	Gypsy	Tekay	no	+	GAG|Tekay RH|Tekay INT|Tekay CHD|Tekay
+cluster_187#LTR/Copia	LTR	Gypsy	Reina	no	-	GAG|Reina
+cluster_190#LTR/Copia	LTR	Copia	Angela	no	-	PROT|Angela INT|Angela RT|Angela RH|Angela
+cluster_193#LTR/Gypsy	LTR	Gypsy	CRM	yes	-	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM CHDCR|CRM
+cluster_195#LTR/Copia	LTR	Copia	Ikeros	yes	-	GAG|Ikeros PROT|Ikeros INT|Angela RT|Ikeros RH|Ikeros
+cluster_196#LTR/Copia	LTR	Copia	Ikeros	yes	+	GAG|Ikeros PROT|Ikeros INT|Ikeros RT|Ikeros RH|Ikeros
+cluster_215#LTR/Copia	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_217#LTR/Copia	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_219#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_221#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_222#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_229#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_230#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_232#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_233#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_234#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_235#LTR/Copia	LTR	Copia	Tork	yes	-	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_239#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_240#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_241#LTR/Gypsy	LTR	Gypsy	CRM	yes	-	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM
+cluster_242#LTR/Gypsy	LTR	Gypsy	CRM	yes	-	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM
+cluster_244#LTR/Gypsy	LTR	Gypsy	CRM	yes	-	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM
+cluster_245#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_246#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_249#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_254#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_255#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_260#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_264#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_265#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_266#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_267#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_268#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_270#LTR/Copia	LTR	Copia	Alesia	yes	-	GAG|Alesia PROT|Alesia INT|Alesia RT|Alesia RH|Alesia
+cluster_278#LTR/Gypsy	LTR	Gypsy	CRM	yes	-	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM
+cluster_279#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_280#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_283#LTR/Copia	LTR	Copia	Tork	yes	-	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_288#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_289#LTR/Gypsy	LTR	Gypsy	CRM	yes	+	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM
+cluster_291#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_293#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_294#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_295#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_297#LTR/Gypsy	LTR	Gypsy	Reina	no	+	GAG|Reina
+cluster_299#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_300#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_302#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_307#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_308#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_317#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_318#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_322#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_325#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_330#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_333#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_336#LTR/unknown	LTR	Gypsy	CRM	no	-	GAG|CRM
+cluster_337#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_341#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_344#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_358#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_361#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_362#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_368#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_370#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_371#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_372#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_382#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_39#LTR/unknown	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_396#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_399#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_407#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_408#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_409#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_410#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_411#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_412#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_419#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_423#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_452#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_455#LTR/Copia	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_457#LTR/Copia	LTR	Copia	Ivana	yes	-	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_458#LTR/Copia	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_463#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_473#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_474#LTR/Copia	LTR	Copia	Ivana	yes	-	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_481#LTR/Copia	LTR	Copia	Ivana	yes	-	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_496#LTR/Copia	LTR	Copia	Ale	no	-	PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_52#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_525#LTR/Copia	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_55#LTR/Gypsy	LTR	Gypsy	CRM	yes	+	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM CHDCR|CRM
+cluster_581#LTR/unknown	LTR	Copia	Bianca	no	+	RH|Bianca
+cluster_59#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_591#LTR/Copia	LTR	Copia	Ale	no	-	GAG|Ale PROT|Ale INT|Ale RH|Ale
+cluster_596#LTR/Gypsy	LTR	Gypsy	Retand	no	+	GAG|Retand
+cluster_607#LTR/Gypsy	LTR	Gypsy	Retand	no	-	GAG|Retand
+cluster_62#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_626#LTR/Copia	LTR	Copia	Ivana	no	+	PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_631#LTR/Copia	LTR	Copia	Ivana	no	-	GAG|Ivana INT|Ivana RT|Ivana RH|Ivana
+cluster_69#LTR/Gypsy	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_72#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_75#LTR/Gypsy	LTR	Gypsy	Retand	no	-	GAG|Retand PROT|Retand RT|Retand aRH|Retand INT|Retand
+cluster_751#LTR/Copia	LTR	Copia	Ivana	no	-	GAG|Ivana PROT|Ivana
+cluster_780#LTR/unknown	LTR	Gypsy	CRM	no	-	CHDCR|CRM
+cluster_79#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_80#LTR/Copia	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_82#LTR/Gypsy	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_83#LTR/Gypsy	LTR	Gypsy	Retand	yes	-	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_84#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_846#LTR/unknown	LTR	Gypsy	Reina	no	-	GAG|Reina
+cluster_85#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_939#LTR/Gypsy	LTR	Gypsy	Reina	no	-	GAG|Reina
+cluster_95#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_96#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_98#LTR/Gypsy	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+cluster_988#LTR/Copia	LTR	Copia	Ale	no	-	RT|Ale RH|Ale
+TE_00000317_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000360_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000421_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000441_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000484_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000634_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000636_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000640_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000779_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000802_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000834_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000849_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000885_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000932_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000933_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000935_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000946_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000965_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000971_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00000972_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001009_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001055_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001519_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001581_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001613_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001644_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001654_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00001690_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001695_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001707_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001769_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001781_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001817_INT#LTR/unknown	LTR	Copia	unknown	none	?	none
+TE_00001819_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001826_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001858_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001903_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00001917_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00001920_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001941_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001942_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00001960_LTR#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00001973_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002021_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002023_LTR#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002027_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002061_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002076_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002095_INT#LTR/unknown	LTR	Copia	unknown	none	?	none
+TE_00002125_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002185_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002241_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002243_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002264_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002288_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002342_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002483_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002490_LTR#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002509_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002531_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002550_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002565_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002629_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002648_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002661_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002663_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002673_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002683_INT#LTR/unknown	LTR	Copia	unknown	none	?	none
+TE_00002697_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002710_LTR#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002713_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002722_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002728_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002795_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002804_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002812_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00002836_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002838_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002858_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00002892_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00002928_INT#LTR/unknown	LTR	Copia	unknown	none	?	none
+TE_00002934_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003031_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003200_INT#LTR/Copia	LTR	Gypsy	unknown	none	?	none
+TE_00003235_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003282_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00003293_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003337_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003347_LTR#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00003350_LTR#LTR/Copia	LTR	Gypsy	unknown	none	?	none
+TE_00003360_LTR#LTR/unknown	LTR	Copia	unknown	none	?	none
+TE_00003382_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003386_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003399_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003415_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00003443_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003459_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003482_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003488_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003560_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00003567_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003630_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003660_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003665_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003672_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003714_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003814_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003819_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003840_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003883_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003900_INT#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+TE_00003931_INT#LTR/Copia	LTR	Gypsy	unknown	none	?	none
+TE_00003946_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00003978_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003987_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00003990_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00004014_LTR#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00004022_INT#LTR/Copia	LTR	Copia	unknown	none	?	none
+TE_00004042_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00004069_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00004087_LTR#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00004164_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+TE_00004236_INT#LTR/Gypsy	LTR	Gypsy	unknown	none	?	none
+cluster_1049#LTR/unknown	LTR	Copia	unknown	none	?	none
+cluster_1113#LTR/unknown	LTR	Copia	unknown	none	?	none
+cluster_177#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+cluster_205#LTR/unknown	LTR	Gypsy	unknown	none	?	none
+cluster_272#LTR/unknown	LTR	Gypsy	unknown	none	?	none

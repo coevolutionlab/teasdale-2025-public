@@ -1,0 +1,9 @@
+HELITRON1	TEsorter	CDS	14890	15390	0.57	+	0	ID=HELITRON1|Class_II/Subclass_2/Helitron:Helitron-HEL2;Name=Helitron-HEL2;gene=HEL2;clade=Helitron;coverage=35.9;evalue=2.9e-78;probability=0.99
+HELITRON2	TEsorter	CDS	9035	9898	0.38	+	1	ID=HELITRON2|Class_II/Subclass_2/Helitron:Helitron-HEL1;Name=Helitron-HEL1;gene=HEL1;clade=Helitron;coverage=39.0;evalue=4.5e-62;probability=0.89
+HELITRON2	TEsorter	CDS	10850	11269	0.26	+	1	ID=HELITRON2|Class_II/Subclass_2/Helitron:Helitron-HEL2;Name=Helitron-HEL2;gene=HEL2;clade=Helitron;coverage=28.6;evalue=2e-36;probability=0.93
+HELITRON3	TEsorter	CDS	10750	11778	0.64	+	0	ID=HELITRON3|Class_II/Subclass_2/Helitron:Helitron-HEL1;Name=Helitron-HEL1;gene=HEL1;clade=Helitron;coverage=51.9;evalue=2.6e-104;probability=0.89
+HELITRON3	TEsorter	CDS	13682	14200	0.46	+	1	ID=HELITRON3|Class_II/Subclass_2/Helitron:Helitron-HEL2;Name=Helitron-HEL2;gene=HEL2;clade=Helitron;coverage=35.0;evalue=8e-63;probability=0.97
+HELITRON4	TEsorter	CDS	15350	16054	0.52	+	1	ID=HELITRON4|Class_II/Subclass_2/Helitron:Helitron-HEL1;Name=Helitron-HEL1;gene=HEL1;clade=Helitron;coverage=39.2;evalue=2.7e-84;probability=0.98
+HELITRON4	TEsorter	CDS	17631	18464	0.8	+	2	ID=HELITRON4|Class_II/Subclass_2/Helitron:Helitron-HEL2;Name=Helitron-HEL2;gene=HEL2;clade=Helitron;coverage=58.8;evalue=6.9e-110;probability=0.96
+HELITRON5	TEsorter	CDS	6855	7676	0.33	+	2	ID=HELITRON5|Class_II/Subclass_2/Helitron:Helitron-HEL1;Name=Helitron-HEL1;gene=HEL1;clade=Helitron;coverage=40.3;evalue=1.5e-53;probability=0.9
+HELITRON5	TEsorter	CDS	9510	10814	0.81	+	2	ID=HELITRON5|Class_II/Subclass_2/Helitron:Helitron-HEL2;Name=Helitron-HEL2;gene=HEL2;clade=Helitron;coverage=83.8;evalue=1.5e-111;probability=0.91

@@ -1,0 +1,135 @@
+#TE	Order	Superfamily	Clade	Complete	Strand	Domains
+ATCOPIA1	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA10	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA11	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA12	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA13	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA14	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA15	LTR	Copia	Ale	no	+	PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA16	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA17	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA18	LTR	Copia	Ale	no	+	RT|Ale RH|Ale
+ATCOPIA18A	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA19	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA2	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA20	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA21	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA22	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA23	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA24	LTR	Copia	Ale	no	+	PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA25	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA26	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA27	LTR	Copia	Bianca	yes	+	GAG|Bianca PROT|Bianca INT|Bianca RT|Bianca RH|Bianca
+ATCOPIA28	LTR	Copia	Bianca	yes	+	GAG|Bianca PROT|Bianca INT|Bianca RT|Bianca RH|Bianca
+ATCOPIA29	LTR	Copia	Bianca	no	+	GAG|Bianca PROT|Bianca INT|Bianca
+ATCOPIA3	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA30	LTR	Copia	Bianca	no	+	RT|Bianca RH|Bianca
+ATCOPIA31	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA31A	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA32	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA32B	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA33	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA34	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA35	LTR	Copia	Ivana	no	+	RH|Ivana PROT|Ivana INT|Ivana RT|Ivana GAG|Ivana
+ATCOPIA36	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA37	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA38	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA38A	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA38B	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA39	LTR	Copia	Ivana	no	+	PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA4	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA40	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA41	LTR	Copia	SIRE	no	+	RT|SIRE GAG|SIRE PROT|SIRE RH|SIRE
+ATCOPIA42	LTR	Copia	SIRE	no	+	GAG|SIRE RH|SIRE
+ATCOPIA43	LTR	Copia	SIRE	yes	+	GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+ATCOPIA44	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA45	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA46	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA47	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA48	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA49	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA5	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA50	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA51	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA52	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA53	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA54	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA55	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA56	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA57	LTR	Copia	Ivana	no	+	GAG|Ivana PROT|Ivana
+ATCOPIA58	LTR	Copia	SIRE	no	+	GAG|SIRE PROT|SIRE RT|SIRE RH|SIRE
+ATCOPIA59	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA60	LTR	Copia	Ale	no	+	RT|Ale RH|Ale
+ATCOPIA61	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA62	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA63	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA64	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA65	LTR	Copia	Ivana	no	+	PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA65A	LTR	Copia	Ivana	no	+	RH|Ivana
+ATCOPIA66	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA67	LTR	Copia	Ale	no	+	GAG|Ale PROT|Ale RT|Ale RH|Ale
+ATCOPIA68	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA69	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA7	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA70	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA71	LTR	Copia	Ale	no	+	GAG|Ale PROT|Ale INT|Ale RT|Ale
+ATCOPIA72	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA73	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA74	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA75	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA76	LTR	Copia	Tork	no	+	PROT|Tork INT|Tork RT|Tork RH|Tork GAG|Tork
+ATCOPIA77	LTR	Copia	Ale	no	+	INT|Ale RT|Ale RH|Ale
+ATCOPIA78	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATCOPIA79	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA80	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA81	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA82	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA83	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA84	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA85	LTR	Copia	Ale	no	+	PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA86	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA87	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+ATCOPIA88	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA89	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA8A	LTR	Copia	Ale	no	+	PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA8B	LTR	Copia	Ale	no	+	RH|Ale GAG|Ale PROT|Ale INT|Ale RT|Ale
+ATCOPIA9	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA90	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA91	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA92	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA93	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA94	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA95	LTR	Copia	TAR	no	+	PROT|TAR RH|TAR GAG|TAR INT|TAR
+ATCOPIA96	LTR	Copia	Ale	no	+	PROT|Ale INT|Ale RT|Ale RH|Ale
+ATCOPIA97	LTR	Copia	Ivana	yes	+	GAG|Ivana PROT|Ivana INT|Ivana RT|Ivana RH|Ivana
+ATGP1	LTR	Gypsy	Tekay	no	+	PROT|Tekay RT|Tekay RH|Tekay INT|Tekay CHD|Tekay GAG|Tekay
+ATGP10	LTR	Gypsy	Tekay	no	+	RT|Tekay RH|Tekay PROT|Tekay INT|Tekay CHD|Tekay GAG|Tekay
+ATGP2	LTR	Gypsy	Tekay	no	+	PROT|Tekay RT|Tekay GAG|Tekay RH|Tekay INT|Tekay CHD|Tekay
+ATGP2N	LTR	Gypsy	Tekay	no	+	CHD|Tekay
+ATGP3	LTR	Gypsy	Reina	yes	+	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+ATGP5	LTR	Gypsy	CRM	yes	+	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM CHDCR|CRM
+ATGP6	LTR	Gypsy	CRM	yes	+	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM CHDCR|CRM
+ATGP7	LTR	Gypsy	CRM	yes	+	GAG|CRM PROT|CRM RT|CRM RH|CRM INT|CRM CHDCR|CRM
+ATGP8	LTR	Gypsy	Tekay	yes	+	GAG|Tekay PROT|Tekay RT|Tekay RH|Tekay INT|Tekay CHD|Tekay
+ATGP9B	LTR	Gypsy	Reina	no	+	GAG|Reina
+ATHILA	LTR	Gypsy	Athila	no	+	PROT|Athila GAG|Athila
+ATHILA0_I	LTR	Gypsy	Athila	no	+	RT|Athila RH|Athila GAG|Athila PROT|Athila INT|Athila
+ATHILA2	LTR	Gypsy	Athila	yes	+	GAG|Athila PROT|Athila RT|Athila RH|Athila INT|Athila
+ATHILA3	LTR	Gypsy	Athila	no	+	PROT|Athila GAG|Athila
+ATHILA4	LTR	Gypsy	Athila	no	+	PROT|Athila
+ATHILA4C	LTR	Gypsy	Athila	yes	+	GAG|Athila PROT|Athila RT|Athila RH|Athila INT|Athila
+ATHILA5	LTR	Gypsy	Athila	no	+	PROT|Athila GAG|Athila
+ATHILA6A	LTR	Gypsy	Athila	yes	+	GAG|Athila PROT|Athila RT|Athila RH|Athila INT|Athila
+ATHILA6B	LTR	Gypsy	Athila	no	+	GAG|Athila RT|Athila RH|Athila INT|Athila PROT|Athila
+ATHILA7	LTR	Gypsy	Athila	yes	+	GAG|Athila PROT|Athila RT|Athila RH|Athila INT|Athila
+ATHILA7A	LTR	Gypsy	Athila	no	+	GAG|Athila PROT|Athila
+ATHILA8A	LTR	Gypsy	Athila	no	+	PROT|Athila
+ATHILA8B	LTR	Gypsy	Athila	no	+	GAG|Athila PROT|Athila
+ATLANTYS1	LTR	Gypsy	Retand	yes	+	GAG|Retand PROT|Retand RT|Retand RH|Retand INT|Retand
+ATLANTYS2	LTR	Gypsy	Retand	no	+	GAG|Retand PROT|Retand RT|Retand aRH|Retand INT|Retand
+ATLANTYS3	LTR	Gypsy	Retand	no	+	GAG|Retand PROT|Retand aRH|Retand INT|Retand
+ATRE1	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+ENDOVIR1	LTR	Copia	SIRE	yes	+	GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE
+META1	LTR	Copia	Bianca	no	+	RH|Bianca
+ROMANIAT5	LTR	Copia	Bianca	yes	+	GAG|Bianca PROT|Bianca INT|Bianca RT|Bianca RH|Bianca
+TA1-2	LTR	Copia	Tork	no	+	PROT|Tork INT|Tork RT|Tork RH|Tork

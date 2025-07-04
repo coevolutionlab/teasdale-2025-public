@@ -1,0 +1,3 @@
+at7143_1_chr1	EDTA	LTR/Ty3	13407	18636	.	+	.	ID=repeat_region_826;Name=ATGP3;Classification=LTR/Gypsy;Sequence_ontology=SO:0000657;ltr_identity=0.9853;Method=structural;motif=TGTA;tsd=AGAGA;EAhelitronOverlap=No;Length=5229;TAIR10_homolog=AT3TE82555_ATGP3
+at9578_1_chr1	EDTA	LTR/Ty3	13407	18636	.	+	.	ID=repeat_region_2229;Name=ATGP3;Classification=LTR/Gypsy;Sequence_ontology=SO:0000657;ltr_identity=0.9853;Method=structural;motif=TGTA;tsd=AGAGA;EAhelitronOverlap=No;Length=5229;TAIR10_homolog=AT3TE82555_ATGP3
+at9830_1_chr1	EDTA	LTR/Ty3	13399	18628	.	+	.	ID=repeat_region_3317;Name=ATGP3;Classification=LTR/Gypsy;Sequence_ontology=SO:0000657;ltr_identity=0.9853;Method=structural;motif=TGTA;tsd=AGAGA;EAhelitronOverlap=No;Length=5229;TAIR10_homolog=AT3TE82555_ATGP3
