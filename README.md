@@ -48,3 +48,16 @@ Our patched version is available at <https://github.com/kdm9/NLRtracker>. This
 should be functionally equivalent to the [upstream
 version](https://github.com/slt666666/NLRtracker), but works around issues with
 concurrent runs and updates to InterProScan.
+
+
+# Details
+
+This repository is a [git-annex](https://git-annex.branchable.com) repository.
+Find instructions on its use under [git-annex.md](git-annex.md).
+
+We use Zstandard compression in many places. Such files have a `.zst` or
+sometimes `.zstd` extension. Zstandard is a modern, high-performance compression
+software. Most modern Linux OSs should have it installed already, if not, it is
+available with  `apt install zstd`, `conda install zstd`, or from [their
+github](https://github.com/facebook/zstd).
+
