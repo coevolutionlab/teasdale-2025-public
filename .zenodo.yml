@@ -4,8 +4,8 @@ upload_type: dataset
 publication_date: '2025-07-07'
 creators:
 - name: Kevin Murray
-  affiliation: 'Weigel Group, MPI Biology Tübingen'
-  orcid: '0000-0002-2466-1917'
+  affiliation: "Weigel Group, MPI Biology T\xFCbingen"
+  orcid: 0000-0002-2466-1917
 keywords:
 - NLRs
 - plant
@@ -14,5 +14,7 @@ license: cc-by-4.0
 communities: []
 notes: Use via Git-annex, see https://github.com/coevolutionlab/teasdale-2025-public
 zenodo:
-  deposition_id: null
+  deposition_id: '15827841'
   last_version: null
+  doi: 10.5281/zenodo.15827841
+  record_url: https://zenodo.org/record/15827841
