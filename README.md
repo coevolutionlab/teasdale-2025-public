@@ -1,5 +1,7 @@
 # Data and Code Access Portal for the dl20 Project
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15828128.svg)](https://doi.org/10.5281/zenodo.15828128)
+
 This page collates links to code and data generated as part of **Teasdale *et
 al.* (2025)** Cell Host & Microbe. Because of the volume of data, this
 repository primarily contains final outputs rather than intermediates, and we
