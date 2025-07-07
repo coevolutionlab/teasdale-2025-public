@@ -1,0 +1,18 @@
+title: Teasdale et al 2025 Public Git Annex
+description: Files from Teasdale et al 2025 Cell Host & Microbe. See https://github.com/coevolutionlab/teasdale-2025-public
+upload_type: dataset
+publication_date: '2025-07-07'
+creators:
+- name: Kevin Murray
+  affiliation: 'Weigel Group, MPI Biology Tübingen'
+  orcid: '0000-0002-2466-1917'
+keywords:
+- NLRs
+- plant
+- arabidopsis
+license: cc-by-4.0
+communities: []
+notes: Use via Git-annex, see https://github.com/coevolutionlab/teasdale-2025-public
+zenodo:
+  deposition_id: null
+  last_version: null
