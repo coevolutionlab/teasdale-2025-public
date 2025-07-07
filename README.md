@@ -1,19 +1,19 @@
 # Data and Code Access Portal for the dl20 Project
 
-This repository collates links to code and data generated as part of **Teasdale
-and Murray *et al.* (2025)**. We are in the process of exporting our
-`git-annex` repository in a way that does not leak storage API keys. This
-repository is the result, and is still being updated. If you need immediate
-access to any specific data which is not listed publicly here, please contact
-the lead authors.
+This page collates links to code and data generated as part of **Teasdale *et
+al.* (2025)** Cell Host & Microbe. Because of the volume of data, this
+repository primarily contains final outputs rather than intermediates, and we
+may have missed files useful to some. If you need immediate access to any
+specific data which is not listed publicly here, please contact the lead
+authors.
 
 # Data
 
 Reads and genomes are available here:
 <https://www.ebi.ac.uk/ena/browser/view/PRJEB91362>. This includes some of our
-genomes were originally released as part of Wlodimeritz et al. (2023). Beware,
+genomes were originally released as part of Wlodzimierz et al. (2023). Beware,
 there are discrepancies between our reads and some reassemblies released with
-Wlodimeritz et al. (2023).
+Wlodzimierz et al. (2023).
 
 
 # Code
@@ -37,7 +37,7 @@ raugraf`.
 
 Many tools within the blindschleiche suite were developed for the dl20 project,
 including most GFF file manipulation and sanitisation code, as well as the easy
-CLI for IGV.js (which powers the above visualisations).
+CLI for IGV.js (which powers our genome viewer).
 
 #### `nlrtracker`
 

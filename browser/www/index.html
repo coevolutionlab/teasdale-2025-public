@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+    <title>DL20 Teasdale et al 2025 CHM Genome Browser</title>
+    <script src="https://cdn.jsdelivr.net/npm/igv@2.12.6/dist/igv.min.js"></script>
+</head>
+<body>
+  <div id="igvherepls"></div>
+  <script>
+    var igvDiv = document.getElementById("igvherepls");
+    var options = {
+    "reference": {
+        "id": "all_accessions",
+        "name": "all_accessions",
+        "fastaURL": "./all_accessions.fasta"
+    },
+    "tracks": [
+        {
+            "name": "all_accesssions.hodgepodgemerged.sort.gff3",
+            "format": "gff3",
+            "autoHeight": true,
+            "minHeight": 50,
+            "maxHeight": 500,
+            "color": "#a6cee3",
+            "url": "./all_accesssions.hodgepodgemerged.sort.gff3.gz",
+            "indexURL": "./all_accesssions.hodgepodgemerged.sort.gff3.gz.tbi"
+        },
+        {
+            "name": "neighbourhoods.bed",
+            "format": "bed",
+            "autoHeight": true,
+            "minHeight": 50,
+            "maxHeight": 500,
+            "color": "#1f78b4",
+            "url": "./neighbourhoods.bed.gz",
+            "indexURL": "./neighbourhoods.bed.gz.tbi"
+        }
+    ]
+};
+        igv.createBrowser(igvDiv, options)
+                .then(function (browser) {
+                    console.log("Created IGV browser");
+                })
+  </script>
+</body>
