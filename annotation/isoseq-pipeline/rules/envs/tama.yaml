@@ -1,0 +1,49 @@
+name: py2.7
+channels:
+  - bioconda
+  - anaconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - biopython=1.74=py27h7b6447c_0
+  - blas=1.0=mkl
+  - bzip2=1.0.8=h7b6447c_0
+  - c-ares=1.18.1=h7f8727e_0
+  - ca-certificates=2022.10.11=h06a4308_0
+  - certifi=2020.6.20=pyhd3eb1b0_3
+  - curl=7.85.0=h5eee18b_0
+  - intel-openmp=2022.0.1=h06a4308_3633
+  - krb5=1.19.2=hac12032_0
+  - libcurl=7.85.0=h91b91d3_0
+  - libdeflate=1.0=h14c3975_1
+  - libedit=3.1.20210910=h7f8727e_0
+  - libev=4.33=h7f8727e_1
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgfortran-ng=7.5.0=ha8ba4b0_17
+  - libgfortran4=7.5.0=ha8ba4b0_17
+  - libgomp=11.2.0=h1234567_1
+  - libnghttp2=1.46.0=hce63b2e_0
+  - libssh2=1.10.0=h8f2d780_0
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - mkl=2019.4=243
+  - mkl-service=2.3.0=py27he904b0f_0
+  - mkl_fft=1.0.15=py27ha843d7b_0
+  - mkl_random=1.1.0=py27hd6b4f25_0
+  - ncurses=6.3=h5eee18b_3
+  - numpy=1.16.6=py27hbc911f0_0
+  - numpy-base=1.16.6=py27hde5b4d6_0
+  - openssl=1.1.1s=h7f8727e_0
+  - pip=19.3.1=py27_0
+  - pysam=0.15.3=py27hda2845c_1
+  - python=2.7.18=ha1903f6_2
+  - readline=8.2=h5eee18b_0
+  - setuptools=44.0.0=py27_0
+  - six=1.16.0=pyhd3eb1b0_1
+  - sqlite=3.40.0=h5082296_0
+  - tk=8.6.12=h1ccaba5_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.6=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+prefix: /ebio/abt6/lvaness/anaconda3/envs/py2.7
