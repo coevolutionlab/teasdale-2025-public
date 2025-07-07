@@ -1,0 +1,30 @@
+#TE	Order	Superfamily	Clade	Complete	Strand	Domains
+rnd-1_family-141	LINE	unknown	unknown	unknown	-	RH|LINE
+rnd-1_family-187	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+rnd-1_family-188	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+rnd-1_family-198	TIR	MuDR_Mutator	unknown	unknown	-	TPase|MuDR_Mutator
+rnd-4_family-37	LINE	unknown	unknown	unknown	-	RH|LINE
+rnd-5_family-1746	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+rnd-5_family-2588	LTR	Copia	Tork	no	-	PROT|Tork
+rnd-5_family-3623	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+rnd-5_family-446	LINE	unknown	unknown	unknown	-	ENDO|LINE RT|LINE
+rnd-5_family-4879	LTR	Gypsy	Galadriel	no	-	CHD|Galadriel
+rnd-5_family-959	LINE	unknown	unknown	unknown	+	ENDO|LINE
+rnd-6_family-1806	TIR	EnSpm_CACTA	unknown	unknown	-	TPase|EnSpm_CACTA
+rnd-6_family-1819	LTR	Copia	Ale	no	-	GAG|Ale
+rnd-6_family-2662	TIR	MuDR_Mutator	unknown	unknown	-	TPase|MuDR_Mutator
+rnd-6_family-2720	Maverick	unknown	unknown	unknown	+	ATPase|Maverick
+rnd-6_family-2800	TIR	EnSpm_CACTA	unknown	unknown	+	TPase|EnSpm_CACTA
+rnd-6_family-297	LTR	Gypsy	CRM	no	-	GAG|CRM
+rnd-6_family-3069	LTR	Gypsy	Tekay	no	-	PROT|Tekay
+rnd-6_family-3502	LTR	Gypsy	Chlamyvir	no	+	CHD|Chlamyvir
+rnd-6_family-3811	LINE	unknown	unknown	unknown	-	RH|LINE
+rnd-6_family-4597	LINE	unknown	unknown	unknown	+	RH|LINE
+rnd-6_family-4829	LINE	unknown	unknown	unknown	+	RH|LINE
+rnd-6_family-5018	LTR	Gypsy	chromo-outgroup	no	+	CHD|chromo-outgroup
+rnd-6_family-5041	LTR	Copia	TAR	no	+	GAG|TAR
+rnd-6_family-5231	LTR	Gypsy	Athila	no	-	PROT|Athila
+rnd-6_family-5426	pararetrovirus	unknown	unknown	unknown	+	PROT|pararetrovirus RT|pararetrovirus RH|Ty3_gypsy
+rnd-6_family-631	LTR	Gypsy	unknown	no	-	GAG|Ty3_gypsy
+rnd-6_family-7633	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+rnd-6_family-8184	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator

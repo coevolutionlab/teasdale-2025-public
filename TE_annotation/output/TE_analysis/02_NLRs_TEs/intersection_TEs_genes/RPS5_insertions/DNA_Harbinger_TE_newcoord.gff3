@@ -1,0 +1,3 @@
+at7143_1_chr1	EDTA	DNA/Harbinger	7299	7507	839	+	.	ID=TE_homo_179735;Name=TE_00000332;Classification=DNA/DTH;Sequence_ontology=SO:0002284;Identity=0.789;Method=homology;EAhelitronOverlap=No;Length=208
+at9578_1_chr1	EDTA	DNA/Harbinger	7299	7507	839	+	.	ID=TE_homo_478532;Name=TE_00000332;Classification=DNA/DTH;Sequence_ontology=SO:0002284;Identity=0.789;Method=homology;EAhelitronOverlap=No;Length=208
+at9830_1_chr1	EDTA	DNA/Harbinger	7291	7499	839	+	.	ID=TE_homo_724076;Name=TE_00000332;Classification=DNA/DTH;Sequence_ontology=SO:0002284;Identity=0.789;Method=homology;EAhelitronOverlap=No;Length=208

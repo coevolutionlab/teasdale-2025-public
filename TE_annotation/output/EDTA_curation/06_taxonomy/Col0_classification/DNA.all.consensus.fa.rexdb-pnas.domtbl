@@ -1,0 +1,737 @@
+#                                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD1|aa1          -           5432   3.9e-17   53.2   0.5   1   2   7.1e-18   1.2e-16   51.6   0.0     1    71   904   973   904   979 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD1|aa1          -           5432   3.9e-17   53.2   0.5   2   2      0.23       3.9   -2.2   0.4    83   117  1157  1190  1141  1195 0.74 -
+Class_II/Subclass_1/TIR/Tc1_mariner:Tc1_mariner-TPase -            151 ATHPOGO|aa2          -            756   1.5e-29   93.5   0.1   1   1   1.3e-30   2.1e-29   93.0   0.1     1   151   336   486   336   486 0.95 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.1.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.1.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.1.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD2|aa1          -           5788   1.6e-28   90.3   0.0   1   1   1.8e-29   3.1e-28   89.4   0.0    22   184   881  1031   874  1031 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL10|aa3         -           4099   8.9e-13   39.0   0.0   1   1   9.6e-14   1.6e-12   38.2   0.0     9    72   885   947   882   949 0.94 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.2.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.2.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.2.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD3|aa2          -           7216   3.5e-43  138.1   5.0   1   3   1.7e-38   2.9e-37  118.8   0.0     1   184   936  1107   936  1107 0.97 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD3|aa2          -           7216   3.5e-43  138.1   5.0   2   3      0.29         5   -2.5   0.2    83   117  1493  1526  1478  1531 0.75 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD3|aa2          -           7216   3.5e-43  138.1   5.0   3   3     2e-08   3.3e-07   20.9   0.3   110   184  6284  6353  6265  6353 0.83 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD3|aa3          -           7216   2.2e-12   37.8   0.0   1   1   2.7e-13   4.6e-12   36.7   0.0    15   102  6201  6287  6200  6308 0.86 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL11|aa2         -           4804     3e-21   66.6   0.1   1   1   2.8e-21   4.8e-20   62.7   0.1     1   183   978  1205   978  1206 0.92 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.3.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.3.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.3.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ARNOLD4|aa1          -           2866   1.8e-36  116.3   0.0   1   1   1.7e-37     3e-36  115.5   0.0     1   184   979  1150   979  1150 0.97 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.4.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.4.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.4.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/PIF_Harbinger:PIF_Harbinger-TPase -            135 ATIS112A|aa3         -           2465   2.2e-07   21.0   0.0   1   1   1.1e-07   1.8e-06   18.0   0.0    44   135  1896  1998  1884  1998 0.82 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL13|aa1         -           4291   3.7e-14   43.5   0.0   1   1   3.2e-15   5.4e-14   43.0   0.0     2    79  1201  1277  1200  1290 0.93 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL13|aa2         -           4291   1.2e-17   54.9   0.5   1   1   1.1e-18   1.9e-17   54.3   0.5    76   184  1370  1467  1365  1467 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.5.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.5.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.5.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU10|aa1           -           2338   5.8e-12   36.4   4.1   1   1   4.7e-13   7.9e-12   35.9   4.1    70   183  1293  1396  1292  1397 0.90 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU10|aa2           -           2338   2.3e-09   27.9   0.2   1   2       0.1       1.8   -1.1   0.0    73    90   559   576   555   576 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU10|aa2           -           2338   2.3e-09   27.9   0.2   2   2   5.2e-10   8.8e-09   26.0   0.0     1    52  1191  1242  1191  1254 0.90 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU10|aa3           -           2337   9.1e-11   32.5   0.3   1   2   5.6e-07   9.4e-06   16.1   0.0     1    37   453   489   453   490 0.95 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU10|aa3           -           2337   9.1e-11   32.5   0.3   2   2   2.1e-06   3.5e-05   14.3   0.3   152   181   644   673   624   675 0.89 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL14|aa1         -           4119   1.9e-19   60.7   0.9   1   1     2e-20   3.4e-19   60.0   0.9    78   184  1453  1548  1447  1548 0.97 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL14|aa2         -           4119   1.4e-21   67.7   0.0   1   1   1.8e-22     3e-21   66.6   0.0     1    88  1334  1420  1334  1422 0.94 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.6.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.6.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.6.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU11|aa2           -           1313   4.1e-10   30.3   0.0   1   1   3.9e-11   6.7e-10   29.7   0.0     4    70   483   550   481   558 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU11|aa3           -           1313   7.4e-07   19.7   4.0   1   1     6e-08     1e-06   19.3   4.0    70   182   584   688   582   690 0.88 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL15|aa1         -           1795   3.7e-06   17.5   0.1   1   1   3.2e-07   5.5e-06   16.9   0.1     1    38   858   895   858   898 0.94 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL15|aa3         -           1794   1.3e-05   15.7   0.2   1   1   1.1e-06   1.9e-05   15.1   0.2    90   183   994  1106   982  1107 0.86 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.7.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.7.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.7.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU1|aa1            -           1896   3.5e-25   79.4   0.7   1   1   2.9e-26   4.9e-25   79.0   0.7    28   183   753   899   750   900 0.94 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL16|aa1         -           3626   2.2e-18   57.3   0.8   1   2   1.1e-14   1.8e-13   41.3   0.0     1    52   869   920   869   931 0.94 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL16|aa1         -           3626   2.2e-18   57.3   0.8   2   2   2.2e-06   3.7e-05   14.2   0.5    78   182   988  1132   986  1134 0.89 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.8.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.8.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.8.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU2|aa1            -           1989   1.7e-08   25.0   0.3   1   1   1.9e-09   3.2e-08   24.2   0.3     4   178  1159  1324  1157  1328 0.79 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL17|aa2         -           3646   3.4e-39  125.1   1.5   1   1   3.3e-40   5.6e-39  124.4   1.5     1   183   870  1043   870  1044 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.9.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.9.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.9.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU3|aa1            -           1699   1.2e-18   58.2   1.7   1   1   1.9e-19   3.1e-18   56.8   1.7    70   183   811   914   810   915 0.92 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU3|aa3            -           1698   5.1e-15   46.3   0.0   1   1   5.4e-16   9.2e-15   45.5   0.0     1    70   709   779   709   790 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL18|aa1         -           3872   3.6e-25   79.4   0.7   1   1   2.9e-26   4.9e-25   79.0   0.7     2   183   994  1163   993  1164 0.97 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.10.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.10.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.10.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.11.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.11.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.11.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU4|aa2            -           1523   1.2e-30   97.3   0.7   1   2   4.8e-18   8.2e-17   52.2   0.0     1    72   530   602   530   607 0.94 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU4|aa2            -           1523   1.2e-30   97.3   0.7   2   2     3e-15   5.1e-14   43.1   0.6    70   158   677   755   676   760 0.87 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.12.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.12.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.12.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU5|aa1            -           1886   2.1e-05   15.0   0.1   1   1   2.2e-06   3.8e-05   14.2   0.1    25    69   581   626   571   630 0.92 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU5|aa3            -           1885   4.4e-22   69.3   2.9   1   2   2.6e-23   4.4e-22   69.3   2.9    70   183   655   758   654   759 0.93 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU5|aa3            -           1885   4.4e-22   69.3   2.9   2   2      0.23       3.9   -2.2   0.1    95   163   790   886   782   890 0.63 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL1|aa1          -           5516   9.9e-19   58.4   0.0   1   1     1e-19   1.7e-18   57.6   0.0    72   184  1109  1210  1107  1210 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL1|aa3          -           5515   4.1e-15   46.7   0.0   1   1   4.1e-16     7e-15   45.9   0.0     9    70  1046  1106  1044  1109 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.13.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.13.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.13.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU6|aa2            -           1457   1.9e-11   34.7   0.0   1   1   1.7e-12     3e-11   34.1   0.0    11    55   515   559   511   561 0.92 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU6|aa3            -           1457     2e-05   15.1   4.7   1   2     5e-06   8.4e-05   13.0   0.3    70   105   600   633   579   651 0.81 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU6|aa3            -           1457     2e-05   15.1   4.7   2   2    0.0035      0.06    3.7   0.5   167   184   686   703   683   703 0.91 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.14.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.14.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.14.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL20|aa1         -           4545   1.7e-05   15.3   0.2   1   1   1.4e-06   2.4e-05   14.8   0.2   145   183   969  1004   958  1005 0.88 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL20|aa2         -           4545   6.2e-15   46.1   0.0   1   1   6.1e-16     1e-14   45.3   0.0    37    98   857   917   851   962 0.83 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL20|aa3         -           4545   5.3e-08   23.5   0.1   1   1   4.8e-09   8.1e-08   22.9   0.1     1    38   820   857   820   860 0.95 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.15.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.15.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.15.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU7|aa3            -           1109   1.1e-12   38.8   0.6   1   2   6.3e-14   1.1e-12   38.8   0.6    70   170   385   475   384   481 0.90 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU7|aa3            -           1109   1.1e-12   38.8   0.6   2   2       0.2       3.4   -2.0   0.1   138   180   890   930   882   931 0.76 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL21|aa1         -           3347   4.9e-06   17.1   0.0   1   1     5e-07   8.6e-06   16.3   0.0    25    57   863   895   860   900 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL21|aa2         -           3347   5.7e-09   26.6   0.0   1   1   5.7e-10   9.7e-09   25.9   0.0    61    98   898   935   891   962 0.82 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL21|aa3         -           3347   6.6e-08   23.1   0.4   1   3     0.052      0.88   -0.1   0.0     1    23   838   860   838   861 0.90 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL21|aa3         -           3347   6.6e-08   23.1   0.4   2   3   3.9e-09   6.6e-08   23.1   0.4   125   183   960  1014   955  1015 0.92 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL21|aa3         -           3347   6.6e-08   23.1   0.4   3   3      0.69        12   -3.8   0.2    86   115  1782  1811  1782  1836 0.52 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.16.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.16.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.16.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU8|aa1            -           1480   9.3e-07   19.4   0.0   1   3      0.56       9.6   -3.5   1.4    97   162   437   508   424   520 0.62 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU8|aa1            -           1480   9.3e-07   19.4   0.0   2   3   5.5e-08   9.3e-07   19.4   0.0    29    69   539   580   533   582 0.94 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU8|aa1            -           1480   9.3e-07   19.4   0.0   3   3         1        17   -6.4   8.5    94   155   967  1028   910  1048 0.51 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU8|aa2            -           1480   3.9e-18   56.5   3.4   1   2   2.3e-19   3.9e-18   56.5   3.4    71   182   608   709   605   711 0.92 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU8|aa2            -           1480   3.9e-18   56.5   3.4   2   2      0.28       4.8   -2.5   0.1    87   100   764   777   744   839 0.72 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL22|aa1         -           3863   1.7e-25   80.5   0.3   1   1   1.6e-26   2.6e-25   79.9   0.3     1   102   778   878   778   888 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.17.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.17.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.17.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU9|aa1            -           1624   0.00037   10.9   4.1   1   1   3.8e-05   0.00065   10.1   4.1    74   183   775   874   770   875 0.81 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 ATMU9|aa3            -           1624   3.9e-09   27.2   0.0   1   1   3.2e-10   5.5e-09   26.7   0.0     1    69   671   740   671   745 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL2|aa1          -           5386   9.8e-43  136.7   0.0   1   1   9.2e-44   1.6e-42  136.0   0.0     1   183   845  1015   845  1016 0.97 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.18.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.18.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.18.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.19.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.19.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.19.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL3|aa1          -           9987     7e-05   13.3   0.1   1   1   6.5e-06   0.00011   12.6   0.1     1    33  1102  1134  1102  1136 0.95 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL3|aa3          -           9986   8.3e-25   78.2   0.0   1   1   8.5e-26   1.4e-24   77.5   0.0    47   183  1148  1272  1146  1273 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.20.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.20.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.20.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM10|aa1        -           3619   3.1e-07   19.9   0.1   1   1   2.5e-08   4.2e-07   19.4   0.1    17    63   953   999   943  1000 0.92 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM10|aa3        -           3618   9.1e-18   54.5   2.1   1   2     0.021      0.35   -0.0   0.4    90   115  1051  1075  1050  1081 0.86 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM10|aa3        -           3618   9.1e-18   54.5   2.1   2   2   9.9e-19   1.7e-17   53.6   0.1   214   334  1327  1447  1270  1461 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL4|aa3          -           6532   6.2e-09   26.5   0.4   1   2   0.00031    0.0052    7.2   0.0    38    69   815   845   782   846 0.84 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL4|aa3          -           6532   6.2e-09   26.5   0.4   2   2   2.3e-07   3.8e-06   17.4   0.1   111   183   889   957   881   958 0.85 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.21.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.21.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.21.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM11|aa1        -           3266   4.3e-18   55.6   0.0   1   1   3.6e-19     6e-18   55.1   0.0   181   352  1376  1539  1329  1541 0.84 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM11|aa2        -           3265   6.1e-26   81.4   0.0   1   1   5.2e-27   8.9e-26   80.9   0.0    14   153  1074  1220  1065  1230 0.89 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase       -            184 VANDAL5A|aa2         -           3226   2.7e-42  135.2   0.1   1   1   4.9e-43   4.2e-42  134.6   0.1     1   183  1872  2042  1872  2043 0.98 -
+Class_II/Subclass_1/TIR/Kolobok:Kolobok-TPase -            262 VANDAL5A|aa2         -           3226   1.5e-05   14.7   0.1   1   1   2.9e-06   2.4e-05   14.0   0.1    75   117  1933  1975  1920  2013 0.78 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL5A|aa3         -           3226   2.1e-08   24.8   0.3   1   2   2.5e-07   4.2e-06   17.3   0.0    16    48   668   700   659   713 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL5A|aa3         -           3226   2.1e-08   24.8   0.3   2   2    0.0013     0.022    5.2   0.1   146   176   855   889   810   892 0.68 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.22.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.22.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.22.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL5|aa3          -           7068   4.1e-31   98.8   0.1   1   2     5e-28   8.6e-27   84.7   0.0     1    89  1403  1490  1403  1491 0.98 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL5|aa3          -           7068   4.1e-31   98.8   0.1   2   2   1.2e-05    0.0002   11.8   0.0   146   183  1542  1576  1523  1577 0.88 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.23.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.23.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.23.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase       -            184 VANDAL6|aa1          -           3054   8.2e-24   75.0   0.1   1   1   1.5e-24   1.3e-23   74.3   0.1    60   184   722   837   706   837 0.90 -
+Class_II/Subclass_1/TIR/Kolobok:Kolobok-TPase -            262 VANDAL6|aa1          -           3054   2.8e-07   20.4   0.1   1   1   5.6e-08   4.7e-07   19.6   0.1    76   113   726   763   717   792 0.91 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL6|aa2          -           3054   4.9e-10   30.1   0.0   1   1   6.1e-11     1e-09   29.0   0.0     1    55   663   717   663   725 0.93 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.24.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.24.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.24.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM2|aa2         -           3506   1.7e-10   30.6   0.0   1   1   1.7e-11   2.9e-10   29.9   0.0     3   124   676   811   674   826 0.76 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase       -            184 VANDAL7|aa2          -           6350     6e-43  137.4   0.1   1   1   1.1e-43   9.5e-43  136.7   0.1     1   183   650   823   650   824 0.97 -
+Class_II/Subclass_1/TIR/Kolobok:Kolobok-TPase -            262 VANDAL7|aa2          -           6350   1.3e-06   18.2   0.0   1   1   2.6e-07   2.2e-06   17.4   0.0    76   124   712   762   710   794 0.80 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.25.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.25.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.25.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM3|aa1         -           3424     4e-12   36.0   0.0   1   1   3.5e-13   5.9e-12   35.4   0.0    42   121  1005  1087   999  1128 0.78 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM3|aa2         -           3423   1.9e-05   14.0   0.0   1   1   1.5e-06   2.6e-05   13.5   0.0     1    35   944   981   944   989 0.87 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM3|aa3         -           3423   4.9e-13   39.0   0.1   1   1   3.9e-14   6.5e-13   38.6   0.1   280   352  1478  1550  1473  1550 0.97 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL8|aa1          -           4184   8.9e-15   45.5   0.4   1   1   8.9e-16   1.5e-14   44.8   0.4     1    96   768   872   768   872 0.90 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL8|aa2          -           4184   2.5e-07   21.2   0.2   1   1   2.4e-08   4.1e-07   20.6   0.2    97   180   869   948   852   952 0.89 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.26.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.26.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.26.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL9|aa1          -           4572   6.4e-15   46.0   0.1   1   2   3.8e-16   6.4e-15   46.0   0.1    78   183  1227  1321  1224  1322 0.96 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL9|aa1          -           4572   6.4e-15   46.0   0.1   2   2      0.75        13   -3.9   0.7   129   180  2442  2487  2427  2488 0.64 -
+Class_II/Subclass_1/TIR/MULE:MULE-TPase -            184 VANDAL9|aa2          -           4572     8e-17   52.2   0.0   1   1     7e-18   1.2e-16   51.7   0.0     1    79  1097  1174  1097  1181 0.97 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.27.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.27.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.27.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM5|aa2         -           3488   2.9e-24   75.9   0.0   1   1   2.5e-25   4.3e-24   75.3   0.0     2   144   583   735   582   744 0.82 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.28.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.28.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.28.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM6|aa2         -           3512   6.7e-17   51.7   0.7   1   2   2.7e-12   4.7e-11   32.5   0.0    54   148   658   761   620   768 0.78 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM6|aa2         -           3512   6.7e-17   51.7   0.7   2   2   9.1e-08   1.5e-06   17.6   0.1   314   358  1035  1079  1032  1079 0.93 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.29.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.29.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.29.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM7|aa3         -           3235   3.1e-28   89.0   0.1   1   2   6.5e-15   1.1e-13   41.1   0.0    19    87   795   867   793   868 0.94 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM7|aa3         -           3235   3.1e-28   89.0   0.1   2   2   2.3e-16   3.9e-15   45.9   0.0   266   352  1221  1306  1215  1306 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.30.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.30.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.30.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.31.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.31.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.31.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM9|aa2         -           3508   1.7e-33  106.3   0.1   1   2   4.7e-24     8e-23   71.2   0.0     2   115   611   729   610   760 0.95 -
+Class_II/Subclass_1/TIR/CMC:CMC-TPase -            358 ATENSPM9|aa2         -           3508   1.7e-33  106.3   0.1   2   2     2e-12   3.4e-11   32.9   0.0   286   358  1017  1089  1012  1089 0.97 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.32.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.32.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.32.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT10|aa2          -           1153   8.8e-50  160.7  12.5   1   2   2.3e-30   3.9e-29   92.6  11.2    13   233   496   717   493   726 0.89 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT10|aa2          -           1153   8.8e-50  160.7  12.5   2   2   1.2e-22     2e-21   67.2   0.0   371   449   866   949   860   950 0.95 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.33.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.33.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.33.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT1|aa3           -           1575   8.2e-24   75.1   5.5   1   1   9.7e-25   1.7e-23   74.1   5.5     1   142   502   648   502   737 0.87 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.34.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.34.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.34.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT2|aa1           -           1257     6e-08   22.8   0.0   1   1   4.7e-09     8e-08   22.4   0.0   196   422   662   908   653   934 0.79 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT2|aa2           -           1257   2.1e-33  106.7   0.3   1   1   1.7e-34   2.9e-33  106.3   0.3     1   182   452   635   452   662 0.84 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.35.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.35.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.35.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT3|aa1           -           1618   9.1e-30   94.7   1.4   1   2   3.6e-15   6.2e-14   42.5   0.2    92   169   826   900   820   906 0.88 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT3|aa1           -           1618   9.1e-30   94.7   1.4   2   2   8.6e-18   1.5e-16   51.2   0.1   386   450  1189  1253  1169  1253 0.95 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT3|aa2           -           1618   5.9e-05   13.0   0.0   1   1   4.2e-06   7.1e-05   12.7   0.0    11    56   735   779   732   792 0.85 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.36.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.36.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.36.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT7|aa2           -           1302   8.5e-34  108.0   3.7   1   2   1.4e-20   2.5e-19   60.3   1.0    58   288   519   788   507   801 0.78 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 ATHAT7|aa2           -           1302   8.5e-34  108.0   3.7   2   2     7e-17   1.2e-15   48.2   0.1   394   450   933   989   932   989 0.98 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.37.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.37.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.37.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.38.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.38.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.38.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/PIF_Harbinger:PIF_Harbinger-TPase -            135 HARBINGER|aa2        -           2256     5e-31   97.5   0.0   1   2    0.0094      0.16    2.0   0.1    21    46   209   234   202   237 0.86 -
+Class_II/Subclass_1/TIR/PIF_Harbinger:PIF_Harbinger-TPase -            135 HARBINGER|aa2        -           2256     5e-31   97.5   0.0   2   2   6.5e-31   1.1e-29   93.2   0.0     1   135  1655  1796  1655  1796 0.91 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.39.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.39.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.39.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.40.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.40.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.40.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.41.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.41.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.41.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.42.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.42.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.42.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.43.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.43.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.43.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.44.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.44.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.44.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.45.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.45.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.45.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 TAG2|aa1             -           1329   1.2e-10   31.7   0.2   1   1   9.4e-12   1.6e-10   31.3   0.2   392   450  1254  1312  1249  1312 0.95 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 TAG2|aa2             -           1328   8.4e-38  121.2   1.2   1   1   7.2e-39   1.2e-37  120.7   1.2    42   322   300   576   290   599 0.81 -
+Class_II/Subclass_1/TIR/hAT:hAT-TPase -            450 TAG2|aa3             -           1328   1.5e-19   61.1   0.1   1   1   1.2e-20     2e-19   60.7   0.1   372   449   672   752   651   753 0.90 -
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.46.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.46.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.46.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.47.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.47.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.47.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.48.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.48.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm ./tmp-7fbaa660-2d22-11ee-b2e6-002590bc431c/chunk.48.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/Col0_classification
+# Date:            Fri Jul 28 10:41:09 2023
+# [ok]

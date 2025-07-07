@@ -1,0 +1,192 @@
+---
+title: "TE-NLR Interplay"
+output: html_notebook
+---
+
+#######  NLRs  #######
+
+# Load overview counts and plot them:
+
+```{r}
+folder_path <- "/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/TE_analisis/PFAM_RM/"
+# Get a list of all the TSV files in the folder
+tsv_files <- list.files(folder_path, pattern = "^[^rando6].*\\.tsv$")
+
+for (file_name in tsv_files) {
+  file_path <- paste0(folder_path, "/", file_name)
+  tibble_name <- gsub("\\.tsv$", "", file_name)
+  assign(tibble_name, vroom(file_path, col_names = FALSE), envir = .GlobalEnv)
+}
+
+# Modify colnames
+colnames(NLR_domains_accession_counts) <- c("Accession", "NLR_domain", "Accession_count")
+colnames(Intersection_counts) <- c("NLR_domain", "domain_count", "Intersection")
+colnames(Closer_than1kb_counts) <- c("NLR_domain", "domain_count_closer", "Close_category")
+
+```
+
+```{r}
+
+a <- NLR_domains_accession_counts %>%  
+    ggplot(aes(x=NLR_domain,  y=Accession_count)) + 
+    geom_col() + 
+    theme_light(base_size = 15) + 
+    facet_wrap(~Accession) +  
+    theme(axis.text.x = element_text(angle=45, vjust=0.5, hjust=0.5), 
+          panel.spacing = unit(1.2, "lines"),
+          strip.background = element_rect(fill="white"),
+          strip.text = element_text(color="grey40"))
+
+
+b <- Intersection_counts %>%  ggplot(aes(x=NLR_domain,  y=domain_count, fill=Intersection)) + 
+  geom_bar(stat="identity", position = "dodge") + 
+  scale_fill_manual(values = c("#2b83ba", "#abdda4")) +
+  ggtitle("NLR domains that intersect wth TEs") + 
+  theme_light(base_size = 15)
+
+c <- Closer_than1kb_counts %>%  ggplot(aes(x=NLR_domain,  y=domain_count_closer,  fill=Close_category)) + 
+  geom_bar(stat="identity", position = "dodge") +
+  scale_fill_manual(values = c("#fdae61", "#abdda4")) +
+  ggtitle(" NLR domains that are closer than 1Kbp  to TEs or further ") + 
+  theme_light(base_size = 15)
+
+
+a/(b+c)
+
+```
+
+
+
+
+
+#######  RANDO6 #######
+
+# Load overview counts and plot them:
+
+```{r}
+
+folder_path <- "/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/TE_analisis/PFAM_RM/"
+# Get a list of all the TSV files in the folder
+
+tsv_files <-  list.files(folder_path, pattern = "^rando6.*\\.tsv$")
+
+for (file_name in tsv_files) {
+  file_path <- paste0(folder_path, "/", file_name)
+  tibble_name <- gsub("\\.tsv$", "", file_name)
+  assign(tibble_name, vroom(file_path, col_names = FALSE), envir = .GlobalEnv)
+}
+
+# Modify colnames
+colnames(rando6_domains_accession_counts) <- c("Accession", "Random_domain", "Accession_count")
+colnames(rando6_intersection_counts) <- c("Random_domain", "domain_count", "Intersection")
+colnames(rando6_closer_than1kb_counts) <- c("Random_domain", "domain_count_closer", "Close_category")
+
+
+
+a2 <- rando6_domains_accession_counts %>%  
+    ggplot(aes(x=Random_domain,  y=Accession_count)) + 
+    geom_col() +
+    theme_light(base_size = 15) + 
+    facet_wrap(~Accession) +  
+    theme(axis.text.x = element_text(angle=45, vjust=0.5, hjust=0.5), 
+          panel.spacing = unit(1.2, "lines"),
+          strip.background = element_rect(fill="white"),
+          strip.text = element_text(color="grey40"))
+
+
+b2 <- rando6_intersection_counts %>%  ggplot(aes(x=Random_domain,  y=domain_count,  fill=Intersection)) + 
+  geom_bar(stat="identity", position = "dodge") + 
+  scale_fill_manual(values = c("#2b83ba", "#abdda4")) +
+  ggtitle("Random domains that intersect wth TEs") + 
+  theme_light(base_size = 15)
+
+c2 <- rando6_closer_than1kb_counts %>%  ggplot(aes(x=Random_domain,  y=domain_count_closer,  fill=Close_category)) + 
+  geom_bar(stat="identity", position = "dodge")  + 
+  scale_fill_manual(values = c("#fdae61", "#abdda4")) +
+  ggtitle("Random domains that are closer than 1Kbp  to TEs or further ") + 
+  theme_light(base_size = 15)
+
+
+a2/(b2+c2)
+
+```
+
+
+
+#######  ALL_PFAM #######
+
+# Load overview counts and plot them:
+
+
+```{r}
+folder_path <- "/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/TE_analisis/PFAM_RM/"
+# Get a list of all the TSV files in the folder
+
+tsv_files <-  list.files(folder_path, pattern = "^all.*\\.tsv$")
+
+for (file_name in tsv_files) {
+  file_path <- paste0(folder_path, "/", file_name)
+  tibble_name <- gsub("\\.tsv$", "", file_name)
+  assign(tibble_name, vroom(file_path, col_names = FALSE), envir = .GlobalEnv)
+}
+
+# Modify colnames
+colnames(all_domains_accession_counts) <- c("Accession", "PFAM_domain", "Accession_count")
+colnames(all_domains_intersection_counts) <- c("Accession", "PFAM_domain", "PFAM_domain_count", "Intersection")
+colnames(all_domains_closer_than1kb_counts) <- c( "Accession", "PFAM_domain", "domain_count_closer", "Close_category")
+
+```
+
+
+```{r}
+
+
+all_domains_accession_counts  %>% 
+    ggplot(aes(x=Accession, y=Accession_count)) + 
+    geom_boxplot() +
+    theme_light(base_size = 15) + 
+    ylab("# domanis per PFAM") + 
+    theme(axis.text.x = element_text(angle=45, vjust=1, hjust=1))
+
+
+
+all_domains_intersection_counts <- pivot_wider(all_domains_intersection_counts, 
+                                               names_from="Intersection", 
+                                               values_from = "PFAM_domain_count", 
+                                               values_fill = 0)
+
+colnames(all_domains_intersection_counts) <- c("Accession", "PFAM_domain", "No_Intersection","Intersection")
+
+all_domains_intersection_counts %>%  
+  mutate(perc_intersection_PFAM_counts = Intersection/(Intersection+No_Intersection)) %>% 
+  ggplot(aes(x=Accession,  y=perc_intersection_PFAM_counts)) + 
+  geom_boxplot() + 
+  scale_fill_manual(values = c("#2b83ba", "#abdda4")) +
+  ggtitle("PFAM domains that intersect wth TEs") + 
+  theme_classic(base_size = 15) +
+  theme( axis.text.x =  element_blank(), axis.ticks.x = element_blank())
+
+
+
+
+
+b2 <- all_domains_intersection_counts %>%  ggplot(aes(x=PFAM_domain,  y=domain_count,  fill=Intersection)) + 
+  geom_bar(stat="identity", position = "dodge") + 
+  scale_fill_manual(values = c("#2b83ba", "#abdda4")) +
+  ggtitle("PFAM domains that intersect wth TEs") + 
+  theme_light(base_size = 15)
+
+c2 <- all_closer_than1kb_counts %>%  ggplot(aes(x=PFAM_domain,  y=domain_count_closer,  fill=Close_category)) + 
+  geom_bar(stat="identity", position = "dodge")  + 
+  scale_fill_manual(values = c("#fdae61", "#abdda4")) +
+  ggtitle("PFAM domains that are closer than 1Kbp  to TEs or further ") + 
+  theme_light(base_size = 15)
+
+
+a2/(b2+c2)
+
+```
+
+
+
+

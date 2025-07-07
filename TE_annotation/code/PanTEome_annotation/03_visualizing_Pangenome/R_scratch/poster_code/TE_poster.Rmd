@@ -1,0 +1,838 @@
+---
+title: " Poster CRAG"
+output: html_notebook
+---
+
+This notebook contains the  code used to generate the  figures used in the CRAG poster about thje TE pangenome of thje differential lines:
+
+```{r}
+
+# Directory  to store the plots and code:
+setwd("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/poster_code/")
+save_path <- "/ebio/abt6_projects7/diffLines_20/data/TE_annotation/poster_code/poster_plots/"
+library(patchwork)
+library(dplyr)
+library(ggplot2)
+library(vroom)
+library(circlize)
+
+Accession_colors <-  c(
+"at6137" = "#a6cee2",
+"at6923" = "#5398c7",
+"at6929" = "#3f8fab",
+"at7143" = "#9acc92",
+"at8285" = "#79c260",
+"at9104" = "#3fa132",
+"at9336" = "#b99d74",
+"at9503" = "#f47678",
+"at9578" = "#e52829",
+"at9744" = "#f26b47",
+"at9762" = "#fdb762",
+"at9806" = "#ff921e",
+"at9830" = "#ec9046",
+"at9847" = "#cdaecb",
+"at9852" = "#9570b5",
+"at9879" = "#7d5d9a",
+"at9883" = "#e1be6d",
+"at9900" = "#b05929")
+
+
+TE_colors <- c("DNA/CACTA" = "#d28bc6",
+               "LTR/Ty1" = "#6fb445",
+               "LTR/Ty3" = "#9754d1",
+               "LTR/unknown" = "#cf46ac",
+               "DNA/HAT" = "#b86d54",
+               "RC/Helitron" = "#a94a70",
+               "LINE" = "#4ea98a",
+               "DNA/Mutator" = "#725b9a",
+               "DNA/Harbinger" = "#657c38",
+               "DNA/Mariner" = "#bf9740",
+               "DNA"= "#6474d8",
+               "MITE/CACTA" = "#4f8ec1",
+               "MITE/Harbinger"  = "#4f8ec1",
+               "MITE/Mariner"  = "#4f8ec1",
+               "MITE/Mutator"  = "#4f8ec1",
+               "Unassigned"  = "#f44336", 
+               "SINE"  = "#666666")
+
+# Set default theme
+theme_set(theme_light(base_size = 20))
+```
+
+Generate total size counts of TE fraction, satellite fraction and total gneome fraction:
+```{bash}
+# Get total Genome size with bioawk and bedtools
+for i in  at*/*final.fasta ; do 
+  name=$(basename $i .scaffolds.bionano.final.fasta) ; 
+  bioawk -c fastx -v acc=$name '{sum+=length($seq)} END{print acc"\t"sum}' $i ; 
+done > ../thaliana_genomes_size.tsv
+# Get Satellite sizes  with bedtools
+for acc in $(cut -f1 -d '_'  pangenome_other_repeats_annotation.gff3  | grep -v "^#" | sort | uniq ) ; do  
+  grep $acc pangenome_other_repeats_annotation.gff3 | 
+  grep -v "Parent=" | bedtools  merge -i - -d -1 | 
+  awk -v acc=$acc '{sum+=$3-$2} END{print acc"\t"sum}' ; 
+done  > thaliana_total_satellites_size.tsv
+# Get TE sizes
+for acc in $(cut -f1 -d '_'  pangenome_TEannotation.gff3  | grep -v "^#" | sort | uniq ) ; do  
+  grep $acc pangenome_TEannotation.gff3 | 
+  grep -v "Parent=" | bedtools  merge -i - -d -1 | 
+  awk -v acc=$acc '{sum+=$3-$2} END{print acc"\t"sum}' ; 
+done  > thaliana_total_TE_size.tsv
+```
+Load these tables and plot them:
+```{r}
+
+thaliana_genome_sizes <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/input/thaliana_genomes_size.tsv", 
+                               col_names = c( "Accession", "gsize"))
+thaliana_TE_sizes <- vroom ("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/thaliana_total_TE_size.tsv", 
+       col_names = c("Accession", "TEsize"))
+
+thaliana_sat_sizes <- vroom ("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/thaliana_total_satellites_size.tsv",  col_names = c("Accession", "Satsize"))
+
+thaliana_size_distribution <-  dplyr::left_join( thaliana_genome_sizes, thaliana_TE_sizes, by= c("Accession"))
+thaliana_size_distribution <-  dplyr::left_join( thaliana_size_distribution , thaliana_sat_sizes, by= c("Accession"))
+thaliana_size_distribution <- thaliana_size_distribution  %>%  
+  mutate(TE_perc  = TEsize/gsize) %>%
+  mutate(sat_perc  = Satsize/gsize) %>%
+  mutate(perc_size  = 1 -(TE_perc+sat_perc)) 
+
+thaliana_size_distribution <- thaliana_size_distribution[,c(1,5:7)] %>%  tidyr::pivot_longer(!Accession, names_to = "type", values_to = "perc")
+
+
+legend_title <- ""
+size_distribution_plot <- thaliana_size_distribution %>%
+  ggplot(aes(x=Accession, y=perc, fill=type)) + 
+  geom_col() +
+  xlab("") +
+  ylab("Genome content distributon") +
+  scale_fill_manual(legend_title,values = c("#e7e1ef", "#c994c7", "#dd1c77"), labels =c ( "Genic", "Sat", "TE") ) + 
+  scale_y_continuous(expand = c(0,0)) +
+  coord_flip()
+
+ggsave(plot = size_distribution_plot, path = save_path, filename = "thaliana_genome_comp.pdf", dpi = 320)
+```
+
+
+
+
+# GET THE TE ANNOTATION  ad parse it using the parse_TE_GFF custom function
+
+```{r}
+pangenome_TE_annotation <- vroom("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/pangenome_TEannotation.gff3", 
+                                 skip = 19,
+                                 col_names = FALSE)
+pangenome_TE_annotation <- parse_TE_GFF(pangenome_TE_annotation)
+
+```
+
+
+```{r}
+
+a <- pangenome_TE_annotation %>% group_by(Accession,Feature) %>%  
+  tally()  %>%  
+  ggplot(aes(x=reorder(Accession, n), y=n,fill=Feature)) + 
+  geom_col() + 
+  ylab("TE number") + 
+  xlab("") + 
+  scale_y_continuous(expand = c(0,0)) +
+  scale_fill_manual(values = TE_colors) + 
+  coord_flip()
+
+b <- pangenome_TE_annotation %>% group_by(Accession,Feature) %>%  
+  dplyr::summarise(total_length = sum(length)) %>%   
+  ggplot(aes(x=reorder(Accession, total_length), y=total_length/1000,fill=Feature)) + 
+  geom_col() + 
+  ylab("TE Kb") + 
+  xlab("") + 
+  scale_y_continuous(expand = c(0,0)) +
+  scale_fill_manual(values = TE_colors) + 
+  coord_flip()
+
+TE_composition_plot <- (a/b) + plot_layout(guides = "collect")
+
+ggsave(plot = TE_composition_plot, path = save_path, filename = "TE_comp.pdf", dpi = 320)
+```
+
+
+# Syntenic Intact TEs
+
+Here load the PAF file of the synteny analysis performed for AT6137
+
+```{r}
+
+at6137_syntenic_TEs_paf <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/old_TE_analisis/fix_TE_search/synteny_analysis_TE/at6137_intacts_all.synteny.paf", col_names = TRUE)
+filtering_gene_score=90
+                                       
+# Retrieve Query TE ID 
+at6137_syntenic_TEs_paf <- at6137_syntenic_TEs_paf  %>%  
+  dplyr::mutate(ID_query = str_remove(.$qname, "::.*$")) %>% 
+  dplyr::mutate(ID_query = str_remove(ID_query, "^ID="))
+
+# Retrieve Query Chrom
+at6137_syntenic_TEs_paf <- at6137_syntenic_TEs_paf  %>%  
+  dplyr::mutate(Chrom_query = str_remove(.$qname, "^.*::")) %>% 
+  dplyr::mutate(Chrom_query = str_remove(Chrom_query, ":.*")) %>% 
+  dplyr::mutate(Chrom_query = str_remove(Chrom_query, "^.*#1#"))
+
+# Retrieve Query genome 
+at6137_syntenic_TEs_paf <-  at6137_syntenic_TEs_paf %>% 
+  dplyr::mutate(query_genome = str_extract(.$qname, "::at.*#")) %>% 
+  dplyr::mutate(query_genome = str_remove(query_genome, "^::")) %>% 
+  dplyr::mutate(query_genome = str_remove(query_genome, "#.*$"))
+
+# Retrieve Target genome: 
+at6137_syntenic_TEs_paf <-  at6137_syntenic_TEs_paf %>%   
+  dplyr::mutate(target_genome = str_remove(.$tname, "#.*$"))
+  
+# Retrieve Target Chrom
+at6137_syntenic_TEs_paf <- at6137_syntenic_TEs_paf  %>%  
+  dplyr::mutate(Chrom_target = str_remove(.$tname, "^.*::")) %>% 
+  dplyr::mutate(Chrom_target = str_remove(Chrom_target, ":.*")) %>% 
+  dplyr::mutate(Chrom_target = str_remove(Chrom_target, "^.*#1#"))
+
+
+# Calculate average of gene doblets:
+
+at6137_syntenic_TEs_paf <- at6137_syntenic_TEs_paf %>%  dplyr::mutate(avg_upstream_gene=(as.numeric(up_identity)+as.numeric(up_simil))/2)
+at6137_syntenic_TEs_paf <- at6137_syntenic_TEs_paf %>%  dplyr::mutate(avg_downstream_gene=(as.numeric(dw_identity)+as.numeric(dw_simil))/2)
+
+at6137_syntenic_TEs_paf_filtered <- at6137_syntenic_TEs_paf %>%  filter(avg_upstream_gene >= filtering_gene_score) %>% 
+  filter(avg_downstream_gene >= filtering_gene_score)
+
+# Get list of FIX TES (IE syntenic in all 17  genomes)
+fix_TEs_list <- at6137_syntenic_TEs_paf_filtered[,c("qname", "target_genome")] %>%  
+  group_by(qname) %>%  tally() %>%  
+  filter(n == 17) %>%  .$qname
+
+at6137_fix_TEs_paf <- at6137_syntenic_TEs_paf_filtered %>%  
+  filter(qname %in% fix_TEs_list) %>%  
+  filter(Chrom_target == "chr4") %>% 
+  filter(Chrom_query == "chr4")
+
+
+#Generate bed files for CIRCOS
+at6137_fix_TEs_origen_pos <-  at6137_fix_TEs_paf[,c("query_genome", "qstart", "qend")]
+at6137_fix_TEs_target_pos <-  at6137_fix_TEs_paf[,c("target_genome", "tstart", "tend")]
+
+```
+
+
+
+
+
+
+
+##########################################################################################################
+##########################################################################################################
+##########                    Load and Create Annotation for circos Chrom 1                     ##########
+##########################################################################################################
+##########################################################################################################
+
+```{r}
+
+# TE subannotation
+list_TEs <- c("Ty1", "Ty3", "Harbinger", "Mutator", "Mariner", "HAT", "CACTA", "LINE", "SINE", "Helitron")
+for (i in  1:length(list_TEs)) {
+  print(list_TEs[i])
+   name <- paste0("subannotation_",list_TEs[i])
+   temp_gff <- pangenome_TE_annotation %>%  
+     filter(grepl(list_TEs[i], Feature)) %>% 
+     filter(grepl("chr1", Chrom)) %>% 
+     mutate(Chrom = str_remove(string = Chrom , pattern = "_1_.*"))
+  assign(name, temp_gff) 
+  rm(temp_gff)
+  
+}
+
+# Load Gene annotation:
+gene_anno <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/NLR_clusters/annotations/ALL_gene_anno.gff3", col_names = c("Chrom",  "Source", "Feature", "Start", "End", "Strand", "Score", "Attrbutes"))
+
+gene_anno <- gene_anno  %>%  
+  filter(Feature == "gene") %>%  
+  filter(grepl("chr1", Chrom)) %>%  
+  mutate(Chrom = str_remove(string = Chrom, pattern = "#1#.*"))
+
+#Load genome sizes from Chrom 1
+genome_sizes <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/pangenome_onlychrom.fasta.fai",
+                      col_names = FALSE)[,c(1,2)]
+colnames(genome_sizes) <- c("Chrom", "Chrom_size")
+genome_sizes <- genome_sizes %>%  filter(grepl("chr1", Chrom)) %>% 
+  mutate(Chrom = str_remove(string = Chrom , pattern = "_1_.*"))
+
+
+#Load NLR cluster Chrom1 
+
+NLR_clusters <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/TE_analisis/NLR_clusters/NLRS_clusters_250000.bed", col_names = c("Chrom", "Start", "End","NLR_number"))
+NLR_clusters <-  NLR_clusters %>%  filter(grepl("chr1", Chrom)) %>%  mutate(Chrom = str_remove(string = Chrom , pattern = "#1#.*"))
+
+```
+
+
+
+#### Make Annotation Circos ######
+```{r}
+
+circos.clear()
+col_text <- "#2E4053"
+circos.par("track.height"= 1 ,gap.degree=0.5,cell.padding=c(0,0,0,0))
+circos.initialize(factors=genome_sizes$Chrom, xlim = matrix(c(rep(0,length(genome_sizes$Chrom)),
+                                                                 genome_sizes$Chrom_size),
+                                                               ncol=2))
+set_track_gap(mm_h(0.1)) # Controls the gap between tracks in the Y axis 
+
+# Backbone
+circos.track(ylim=c(0,1),panel.fun=function(x,y) {
+  chr=CELL_META$sector.index
+  xlim=CELL_META$xlim
+  ylim=CELL_META$ylim
+  circos.text(mean(xlim),mean(ylim),chr,cex=1,col= col_text, #cex is font size 
+              facing="bending.outside",niceFacing=TRUE,adj = 2.5)
+},bg.col="white", bg.border=F,track.height=0.01)
+
+# Coord numbering: 
+brk <- c(0,0.5,1,1.5,2,2.5,3)*10^7
+circos.track(track.index = get.current.track.index(), panel.fun = function(x, y) {
+    circos.axis(h="top",major.at=brk,labels=round(brk/10^6,1),labels.cex=0.4,
+                col=col_text,labels.col=col_text,lwd=1,labels.facing="clockwise")
+},bg.border=F)
+
+
+
+#Colors from :https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
+
+# Annotation Genes # Yellow Orange.  Old: Cotton Candy 
+#circos.genomicDensity(gene_anno[,c(1,4,5)], 
+##                      track.height=0.05, 
+##                      window.size = 1000000, 
+#                      bg.border=F, col= "#FFAE42")
+
+# Annotation NLRs Alt 
+circos.genomicTrack(data=NLR_clusters, panel.fun=function(region,value,...) {
+    circos.genomicPoints(region,value,col="#2D383A", pch = 20, bg="#FE6F5E", lwd=2,cex = 0.5)
+},track.height=0.05,bg.border=F)
+
+# Annotation NLRs
+#circos.genomicTrack(data=NLR_clusters, panel.fun=function(region,value,...) {
+#  circos.genomicRect(region,value,ytop = 0.01, ybottom = 0,col="black")
+#},track.height=0.05,bg.border=F)
+
+#Annotation Helitrons Indigo 
+circos.genomicDensity(subannotation_Helitron[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#4F69C6")
+#Annotation Mutators Eggplant
+circos.genomicDensity(subannotation_Mutator[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#614051")
+
+#Annotation Ty3 Ferm
+circos.genomicDensity(subannotation_Ty3[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#63B76C")
+
+
+#Annotation Ty1 Mahogany 
+circos.genomicDensity(subannotation_Ty1[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#CA3435")
+
+#Annotation CACTA DANDELION
+circos.genomicDensity(subannotation_CACTA[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#FED85D")
+
+#Annotation Mariner  Blue Violet
+circos.genomicDensity(subannotation_Mariner[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#6456B7")
+
+
+#Annotation Harbinger  Maroon
+circos.genomicDensity(subannotation_Harbinger[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#C32148")
+
+
+#Annotation HAT Shamrock
+circos.genomicDensity(subannotation_HAT[,c(1,4,5)], 
+                      track.height=0.05, 
+                      window.size = 1000000, 
+                      bg.border=F, col= "#33CC99")
+
+
+#Annotation LINE Vivid Tangerine
+#circos.genomicDensity(subannotation_LINE[,c(1,4,5)],track.height=0.05, window.size = 1000000, bg.border=F, col= "#FF9980")
+
+#Annotation SINE Goldenrod
+#circos.genomicDensity(subannotation_SINE[,c(1,4,5)], track.height=0.05, window.size = 1000000, bg.border=F, col= "#FCD667")
+
+
+# Add at6137 Syntenic TEs
+#Interactions
+#circos.genomicLink(at6137_fix_TEs_origen_pos, at6137_fix_TEs_target_pos,
+#                   col = rand_color(nrow(at6137_fix_TEs_origen_pos), transparency = 0.4, luminosity = "dark" ))
+```
+
+
+
+##########################################################################################################
+##########################################################################################################
+##########                                       END CIRCOS                                     ##########
+##########################################################################################################
+##########################################################################################################
+
+
+
+
+
+# TE identity Landscape  for DNA TEs
+
+```{r}
+# Check wither identity is numeric or character
+pangenome_identity_summary_stats <- pangenome_TE_annotation %>%  
+  group_by(Accession, Feature,TEfam)  %>%  
+  dplyr::summarize(mean = mean(identity, na.rm=TRUE), 
+                     sd = sd(identity, na.rm=TRUE))
+
+
+pangenome_identity_summary_stats  %>%  
+    ggplot(aes(x=mean,y=sd, color=Accession)) + 
+    geom_point(alpha = 0.5) + 
+  scale_color_manual(values = Accession_colors) + 
+  theme_light(base_size = 15) + 
+  xlab("Mean % Identity") + 
+  ylab("Standard deviation") 
+
+
+pangenome_identity_summary_stats  %>%  
+  ggplot(aes(x=identity_mean,y=identity_sd)) + 
+  geom_point(alpha = 0.5) + 
+  facet_wrap(~Feature) + 
+  theme_light()
+
+# Density of the mean 
+pangenome_identity_summary_stats %>%  
+    filter(!grepl( "MITE.*", Feature))  %>% 
+    filter(!grepl( "LTR*", Feature))  %>% 
+    filter(!grepl( "*INE", Feature))  %>% 
+    filter(Feature != "DNA")  %>% 
+    filter(Feature != "Unassigned")  %>% 
+    ggplot(aes(x=identity_mean, color=Accession)) + 
+    geom_density() + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 30)  + 
+    facet_wrap(~Feature) +
+    theme( strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+# Density of the standart deviation
+pangenome_identity_summary_stats %>%  
+    filter(!grepl( "MITE.*", Feature))  %>% 
+    filter(!grepl( "LTR*", Feature))  %>% 
+    filter(!grepl( "*INE", Feature))  %>% 
+    filter(Feature != "DNA")  %>% 
+    filter(Feature != "Unassigned")  %>% 
+    ggplot(aes(x=identity_sd, color=Accession)) + 
+    geom_density() + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 30)  + 
+    facet_wrap(~Feature) +
+    theme( strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+```
+
+
+# Load the LTR age stimation and correlate it to the  % Identity  of LTRs
+
+```{r}
+
+
+pangenome_TE_annotation <- dplyr::left_join(pangenome_TE_annotation, ltr_age_all , by=c("ID", "Accession"))
+
+
+pangenome_TE_annotation %>%  
+    filter(!is.na(mya_k2p)) %>% 
+    ggplot(aes(x=mya_k2p, color=Accession)) + 
+    geom_density() + 
+    scale_x_continuous( breaks=scales::breaks_pretty(n = 8)) + 
+    xlab("Mya") + 
+    ylab("LTR age estimation") + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 20)  + 
+    theme( strip.background = element_blank(),
+           strip.text.x = element_text(color = "grey40"))
+
+
+pangenome_TE_annotation %>%  
+    filter(!is.na(mya_k2p)) %>% 
+    ggplot(aes(x=mya_k2p, y=identity, color=Accession)) + 
+    geom_point() + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 20)  + 
+    facet_wrap(~Feature) +
+    theme( strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+
+pangenome_identity_summary_stats <- pangenome_TE_annotation %>%  
+  group_by(Accession, Feature,TEfam)  %>%  
+  dplyr::summarize(identity_mean = mean(identity, na.rm=TRUE), 
+                   identity_sd = sd(identity, na.rm=TRUE),
+                   ltr_myak2_mean = mean(mya_k2p, na.rm=TRUE), 
+                   ltr_myak2_sd = sd(mya_k2p, na.rm=TRUE))
+
+
+LTR_ages_pangenome <-  pangenome_TE_annotation %>%  filter(!is.na(mya_k2p))
+LTR_ages_pangenome %>%  
+  ggplot(aes(x=identity,y=mya_k2p, color=Accession)) + 
+  geom_point() +  
+  scale_color_manual(values = Accession_colors) + 
+  theme_light(base_size = 20)  + 
+  facet_wrap(~Accession) +
+  theme( strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+pangenome_TE_annotation %>%  
+    filter(!is.na(mya_k2p)) %>% 
+    ggplot(aes(x=mya_k2p, y=identity, color=Accession)) + 
+    geom_point() + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 20)  + 
+    facet_wrap(~Feature) +
+    theme( strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+pangenome_TE_annotation %>%  
+    filter(!is.na(mya_k2p)) %>% 
+    ggplot(aes(y=mya_k2p, x=identity, color=Accession)) + 
+    geom_point() + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 20)  + 
+    theme( strip.background = element_blank(),
+           strip.text.x = element_text(color = "grey40"))
+
+
+
+pangenome_TE_annotation %>%  
+    filter(!is.na(mya_k2p)) %>% 
+    ggplot(aes(x=mya_k2p, color=Accession)) + 
+    geom_density() + 
+    scale_x_continuous( breaks=scales::breaks_pretty(n = 8)) + 
+    xlab("Mya") + 
+    ylab("LTR age estimation") + 
+    scale_color_manual(values = Accession_colors) + 
+    theme_light(base_size = 20)  + 
+    theme( strip.background = element_blank(),
+           strip.text.x = element_text(color = "grey40"))
+
+```
+
+
+##########################################################
+############# NLR CLUSTER COMPOSTION OF TEs ##############
+##########################################################
+
+```{r}
+
+NLR_TE_cluster_assoc <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/TE_analisis/NLR_clusters/TE_cluster25kb_asooc.tsv", col_names = c("ID", "NLR_cluster"))
+
+pangenome_TE_annotation <- dplyr::left_join(pangenome_TE_annotation, NLR_TE_cluster_assoc, by="ID")
+
+pangenome_TE_annotation <- pangenome_TE_annotation %>%  
+  mutate(NLR_TE_cluster_assoc = ifelse(is.na(NLR_cluster), "NO", "YES"))
+
+
+
+a <- pangenome_TE_annotation  %>%  
+  group_by(Feature, NLR_TE_cluster_assoc) %>%  
+  tally() %>% 
+  ggplot(aes(x=NLR_TE_cluster_assoc,y=n, fill=Feature)) + 
+  geom_bar(position="fill", stat="identity") +  
+  theme_light(base_size = 20) + 
+  scale_y_continuous(expand = c(0,0)) +
+  scale_fill_manual(values = TE_colors) +
+  ylab("Proportion of TEs") +
+  xlab("TE at NLR cluster")
+
+
+b <- pangenome_TE_annotation  %>%
+  ggplot(aes(x=NLR_TE_cluster_assoc,y=identity)) + 
+  geom_boxplot() + 
+  theme_light(base_size = 20)  + 
+  
+
+c <- pangenome_TE_annotation  %>%
+    ggplot(aes(x=identity, group=NLR_TE_cluster_assoc, fill=NLR_TE_cluster_assoc)) + 
+    geom_density(alpha=0.5) + 
+    theme_light(base_size = 20) 
+
+a|(b/c)
+
+library(ggpubr)
+
+pangenome_TE_annotation  %>%
+    ggplot(aes(x=NLR_TE_cluster_assoc,y=identity, color=NLR_TE_cluster_assoc)) + 
+    geom_boxplot() + scale_color_manual(values = c("#FE6F5E" ,"#766EC8")) + 
+    theme_light(base_size = 20)  +
+    stat_compare_means(label.y = 1.01)
+
+
+
+
+
+TEsizes_all <- pangenome_TE_annotation %>% group_by(Accession,Feature) %>%  
+    dplyr::summarise(total_length = sum(length)) %>%   
+    ggplot(aes(x=Accession, y=total_length/1000000,fill=Feature)) + 
+    geom_col() + 
+    ylab("Mb") + 
+    xlab("") + 
+    ggtitle("Genome-wide TEs") + 
+    scale_y_continuous(expand = c(0,0)) +
+    scale_fill_manual(values = TE_colors) + 
+    coord_flip() +
+    theme_light(base_size = 20)
+
+
+
+TEsizes_nlrs <- pangenome_TE_annotation  %>% filter(NLR_TE_cluster_assoc == "YES") %>%  
+  group_by(Accession,Feature) %>%  
+  dplyr::summarise(total_length = sum(length)) %>%   
+  ggplot(aes(x=Accession, y=total_length/1000000,fill=Feature)) + 
+  geom_col() + 
+  ylab("Mb") + 
+  xlab("") + 
+  ggtitle("TEs at NLR clusters") + 
+  scale_y_continuous(expand = c(0,0)) +
+  scale_fill_manual(values = TE_colors) + 
+  coord_flip() + 
+  theme_light(base_size = 20)
+
+TE_size_plot <- (TEsizes_all/TEsizes_nlrs) + plot_layout(guides = "collect") & theme(legend.position = 'bottom')
+ggsave(plot = TE_size_plot, path = save_path, filename = "TE_sizes.pdf", dpi = 320)
+
+
+```
+
+Shannon Diversity Index  of Transposable elements:
+
+What is the Shannon Diversity Index?
+The Shannon index is a mathematical tool for calculating the proportional abundance of species in a given location. This type of species abundance provides an indication of the biological diversity in that area. It is related to information entropy in that the formula Of the two concepts is identical. The difference is that in information entropy the value p is the probability of a particular arrangement but with the Shannon index p = n/N where “n” is the number of individuals of a given species and N is the total number of individuals.
+
+```{r}
+#Example code:
+pop = c(100, 500, 200, 600, 500, 400, 700, 900, 800)
+n = pop
+N = sum(pop)
+p = n/N
+H = -sum(p*log(p))
+H
+
+# Make it a functon 
+Shannon_div_index <- function (data) {
+  pop <- data
+  n = pop
+  N = sum(pop)
+  p = n/N
+  H = -sum(p*log(p))
+  H
+}
+
+
+# Calculating the number of TE copies per family per genome:
+
+counts_TE_fam <- pangenome_TE_annotation %>%  group_by(TEfam,Feature,Accession) %>%  tally()
+accessions <- unique(counts_TE_fam$Accession)
+tefams<- unique(counts_TE_fam$TEfam)
+accessions_Shannon_div_index <-  counts_TE_fam %>% 
+  group_by(Accession) %>% 
+  group_map(~ Shannon_div_index(.$n)) %>% 
+  setNames(accessions) %>% 
+  unlist() %>% 
+  tibble::enframe()
+
+
+accessions_Shannon_div_index %>%  
+    ggplot(aes(x=reorder(name,value), y=value, color=name)) + 
+    geom_point(size=4) +
+    xlab("") +
+    ylab("Shannon Diversity Index of All TEs") + 
+    scale_color_manual(values = Accession_colors) + coord_flip() + 
+    theme_light(base_size = 25) +
+    theme(legend.position = "none")
+
+
+
+# Calculating the number of TE copies per family per genome for recent TEs only :
+
+counts_TE_fam_recent <- pangenome_TE_annotation %>%  filter(identity > 0.95) %>% group_by(TEfam,Feature,Accession) %>%  tally()
+accessions <- unique(counts_TE_fam_recent$Accession)
+tefams <- unique(counts_TE_fam_recent$TEfam)
+accessions_Shannon_div_index_recent <-  counts_TE_fam_recent %>% 
+  group_by(Accession) %>% 
+  group_map(~ Shannon_div_index(.$n)) %>% 
+  setNames(accessions) %>% 
+  unlist() %>% 
+  tibble::enframe()
+
+accessions_Shannon_div_index_recent %>%  
+    ggplot(aes(x=reorder(name,value), y=value, color=name)) + 
+    geom_point(size=4) +
+    xlab("") +
+    ylab("Shannon Diversity Index of Young TEs") + 
+    scale_color_manual(values = Accession_colors) + coord_flip() + 
+    theme_light(base_size = 25) +
+    theme(legend.position = "none")
+
+
+```
+
+
+##########################################################
+########### PHYLOGENETIC COMPOSTION OF THE TEs ###########
+##########################################################
+
+
+TEsorter annotation and phylogeentic classification of TEs
+
+```{r}
+pangenome_TE_sorter_phylo <- vroom("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/TEsorter/TElib/pangenome.TElib.newTEfams.fa.rexdb-plant.dom.gff3", col_names = c("TEfam", "Source", "Feature", "Start", "End", "Score", "strand", "Phase", "Attributes"))
+
+
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>%      dplyr::mutate(TEsorterID = str_extract(.$Attributes, "ID=.*")) %>%
+    dplyr::mutate(TEsorterID = str_remove(TEsorterID, ";.*$")) %>%
+    dplyr::mutate(TEsorterID = str_remove(TEsorterID, "^ID="))
+#Name
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>%  
+  dplyr::mutate(Name = str_extract(.$Attributes, "Name=.*")) %>%
+    dplyr::mutate(name = str_remove(name, ";.*$")) %>%
+    dplyr::mutate(name = str_remove(name, "^Name="))
+# Gene
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>% 
+  dplyr::mutate(gene = str_extract(.$Attributes, "gene=.*")) %>%
+    dplyr::mutate(gene = str_remove(gene, ";.*$")) %>%
+    dplyr::mutate(gene = str_remove(gene, "^gene="))
+
+# clade
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>% 
+  dplyr::mutate(clade = str_extract(.$Attributes, "clade=.*")) %>%
+    dplyr::mutate(clade = str_remove(clade, ";.*$")) %>%
+    dplyr::mutate(clade = str_remove(clade, "^clade="))
+
+# coverage
+pangenome_TE_sorter_phylo <-  pangenome_TE_sorter_phylo %>% 
+    dplyr::mutate(coverage = str_extract(.$Attributes, "coverage=.*")) %>%
+    dplyr::mutate(coverage = str_remove(coverage, ";.*$")) %>%
+    dplyr::mutate(coverage = str_remove(coverage, "^coverage=")) %>% 
+   dplyr::mutate(coverage = as.numeric(coverage))
+
+# evalue
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>%  dplyr::mutate(evalue = str_extract(.$Attributes, "evalue=.*")) %>%
+    dplyr::mutate(evalue = str_remove(evalue, ";.*$")) %>%
+    dplyr::mutate(evalue = str_remove(evalue, "^evalue=")) %>% 
+     dplyr::mutate(evalue = as.numeric(evalue))
+# probability
+pangenome_TE_sorter_phylo <- pangenome_TE_sorter_phylo %>%      dplyr::mutate(probability = str_extract(.$Attributes, "probability=.*")) %>%
+    dplyr::mutate(probability = str_remove(probability, ";.*$")) %>%
+    dplyr::mutate(probability = str_remove(probability, "^probability=")) %>% 
+  dplyr::mutate(probability = as.numeric(probability))
+
+```
+
+# Ftler by coverage 
+```{r}
+
+pangenome_TE_sorter_phylo %>%  filter(coverage > 80) %>% 
+    group_by(clade) %>%  tally() %>%   
+    ggplot(aes(x=reorder(clade,n), y=n)) + 
+    geom_col() + 
+    theme_light(base_size = 20) + 
+    coord_flip() + ylab("Number of TE Families") + 
+     xlab("")
+
+pangenome_TE_sorter_phylo  %>% 
+  filter(coverage > 80) %>% 
+  group_by(gene) %>%  tally() %>%   
+    ggplot(aes(x=reorder(gene,n), y=n)) + 
+    geom_col() + 
+    theme_light(base_size = 20) + 
+    coord_flip()
+
+```
+
+
+# Intact TEsorter evaulation
+```{r}
+
+TEsorter_intact_eval <- vroom("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/TEsorter/intacts/pangenome_TEannotation_intacts.fasta.rexdb-plant.cls.tsv", col_names = TRUE)
+
+
+TEsorter_intact_eval <- dplyr::left_join(TEsorter_intact_eval , pangenome_TE_annotation[,c(11,3,20)],by="ID")
+
+TEsorter_intact_eval <- TEsorter_intact_eval %>%  mutate(Feature = ifelse( Feature == "LTR/unknown", Superfamily, Feature)) %>% 
+  mutate(Feature = ifelse(Feature == "Copia", "LTR/Ty1",ifelse(Feature == "Gypsy", "LTR/Ty3", Feature)))
+
+
+TEsorter_intact_eval %>%  
+  group_by(Complete,classification,Accession) %>%  
+  filter(Complete == "Yes") %>%  
+  tally() %>%   
+  ggplot(aes(x=n, y=Complete, fill=classification)) + 
+  geom_bar(position="fill", stat="identity") +  
+  theme_light(base_size = 20) + 
+  scale_x_continuous(expand = c(0,0)) +
+  scale_fill_manual(values = TE_colors)
+
+
+TEsorter_intact_eval %>%  
+    group_by(Complete,Clade,Accession) %>%  
+    filter(Complete == "yes") %>%  
+    tally() %>%  
+  ggplot(aes(x=reorder(Clade,n),y=n, fill=Accession)) + 
+  geom_col() + 
+  scale_fill_manual(values = Accession_colors) + 
+  theme_light(base_size = 20) + 
+  facet_wrap(~Accession) + 
+  xlab("") +
+  ylab("Number of complete LTRs") + 
+  coord_flip() +
+  theme( legend.position = "none", strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+TEsorter_intact_eval %>%  
+    group_by(Complete,Feature,Accession) %>%  
+    filter(Complete == "yes") %>%  
+    tally() %>%  
+  ggplot(aes(x=reorder(Feature,n),y=n, fill=Accession)) + 
+  geom_col() + 
+  scale_fill_manual(values = Accession_colors) + 
+  theme_light(base_size = 20) + 
+  facet_wrap(~Accession, nrow = 2) + 
+  xlab("") +
+  ylab("# TEs estimated to be mobile") + 
+  coord_flip() +
+  theme( legend.position = "none", strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+
+#TEsorter_intact_eval %>%  mutate(Feature = ifelse( Feature == "LTR/unknown", Superfamily, Feature)) %>% 
+#  mutate(Feature = ifelse(Feature == "Copia", "LTR/Ty1",ifelse(Feature == "Gypsy", "LTR/Ty3", Feature)))
+  
+
+
+
+```
+

@@ -1,0 +1,3 @@
+at7143_1_chr1	EDTA	LTR/Ty1	18823	18932	856	-	.	ID=TE_homo_179736;Name=META1;Classification=LTR/Copia;Sequence_ontology=SO:0002264;Identity=0.837;Method=homology;EAhelitronOverlap=No;Length=109;TAIR10_homolog=AT3TE67415_META1
+at9578_1_chr1	EDTA	LTR/Ty1	18823	18932	889	-	.	ID=TE_homo_478533;Name=META1;Classification=LTR/Copia;Sequence_ontology=SO:0002264;Identity=0.847;Method=homology;EAhelitronOverlap=No;Length=109;TAIR10_homolog=AT3TE67415_META1
+at9830_1_chr1	EDTA	LTR/Ty1	18815	18924	876	-	.	ID=TE_homo_724077;Name=META1;Classification=LTR/Copia;Sequence_ontology=SO:0002264;Identity=0.842;Method=homology;EAhelitronOverlap=No;Length=109;TAIR10_homolog=AT3TE67415_META1

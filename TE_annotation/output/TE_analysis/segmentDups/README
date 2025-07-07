@@ -1,0 +1,21 @@
+################
+# This files has been retreeived from:
+
+"/tmp/global2/gshirsekar/diffLines-annex/segDuplications/output"
+
+# Date: 09-08-23
+
+# Create symlinks
+ln -s /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/final_TE_annotation/pangenome_rDNA_annotation.gff3  . 
+ln -s /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/final_TE_annotation/pangenome.fasta.fai . 
+
+##### Filtering and formatting of the segdups #####
+
+# Merge, sort and add ID number to every entry
+cat  at*Error5.bedpe | bedtools  sort -i -   -g pangenome.fasta.fai |
+awk '{print $0"\tSEGDUP_ID="NR}' > ALL_biser1.4_editError5.bedpe 
+
+# Filter  and remove entries that overlap withy new rDNA annotation:
+
+bedtools  pairtobed -type neither  -a ALL_biser1.4_editError5.bedpe  -b pangenome_rDNA_annotation.gff3 >  ALL_biser1.4_editError5_filtered.bedpe
+

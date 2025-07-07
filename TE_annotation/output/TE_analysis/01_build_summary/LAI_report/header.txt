@@ -1,0 +1,1 @@
+Accession	Chr	From	To	Intact	Total	raw_LAI	LAI

@@ -1,0 +1,275 @@
+---
+title: "PanTEnome"
+output: html_document
+---
+
+```{r}
+
+library(patchwork)
+library(dplyr)
+library(ggplot2)
+library(vroom)
+
+# Import functions
+
+source("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/code/PanTEome_annotation/03_visualizing_Pangenome/funcs_parsing.R")
+
+# Import colors
+TE_colors <- c("DNA/CACTA" = "#d28bc6",
+               "LTR/Ty1" = "#6fb445",
+               "LTR/Ty3" = "#9754d1",
+               "LTR/unknown" = "#cf46ac",
+               "DNA/HAT" = "#b86d54",
+               "RC/Helitron" = "#a94a70",
+               "LINE" = "#4ea98a",
+               "DNA/Mutator" = "#725b9a",
+               "DNA/Harbinger" = "#657c38",
+               "DNA/Mariner" = "#bf9740",
+               "DNA"= "#6474d8",
+               "MITE/CACTA" = "#4f8ec1",
+               "MITE/Harbinger"  = "#4f8ec1",
+               "MITE/Mariner"  = "#4f8ec1",
+               "MITE/Mutator"  = "#4f8ec1",
+               "Unassigned"  = "#f44336", 
+               "SINE"  = "#666666")
+
+TE_colors_reduced <- c("DNA/CACTA" = "#d28bc6",
+               "LTR/Ty1" = "#6fb445",
+               "LTR/Ty3" = "#9754d1",
+               "LTR/unknown" = "#cf46ac",
+               "DNA/HAT" = "#b86d54",
+               "RC/Helitron" = "#a94a70",
+               "LINE" = "#4ea98a",
+               "DNA/Mutator" = "#725b9a",
+               "DNA/Harbinger" = "#657c38",
+               "DNA/Mariner" = "#bf9740",
+               "DNA"= "#6474d8",
+               "Unassigned"  = "#f44336", 
+               "SINE"  = "#666666")
+
+```
+
+
+# Load the main TE annotation file.
+```{r}
+
+pangenome_TE_annotation <- vroom("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/output/final_TE_annotation/pangenome_TEannotation.gff3", 
+                                 skip = 23,
+                                 col_names = FALSE)
+
+pangenome_TE_annotation <- parse_TE_GFF(pangenome_TE_annotation)
+
+# Clean some of the TE families 
+pangenome_TE_annotation <- pangenome_TE_annotation %>%  dplyr::mutate(TEfam = str_remove(TEfam, "#.*$"))
+# MAke a reduced version of the feature column (basically replace he MITE part for DNA)
+pangenome_TE_annotation <- pangenome_TE_annotation %>%  dplyr::mutate(Feature_reduced = str_replace(Feature, "MITE","DNA"))
+```
+
+```{r}
+# load the genome sizes and merge it with the Pangenome TE anno
+
+thaliana_genome_sizes <- vroom("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/input/thaliana_genomes_size.tsv", 
+                               col_names = c( "Accession", "gsize"))
+thaliana_TE_sizes <- vroom ("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/thaliana_total_TE_size.tsv", 
+       col_names = c("Accession", "TEsize"))
+
+thaliana_sat_sizes <- vroom ("/tmp/global2/acontreras/difflines_annex_adri/TE_annotation/output/FINAL_TE_annotation/thaliana_total_satellites_size.tsv",  col_names = c("Accession", "Satsize"))
+
+
+thaliana_size_distribution <-  dplyr::left_join( thaliana_genome_sizes, thaliana_TE_sizes, by= c("Accession"))
+thaliana_size_distribution <-  dplyr::left_join( thaliana_size_distribution , thaliana_sat_sizes, by= c("Accession"))
+thaliana_size_distribution <- thaliana_size_distribution  %>%  
+  mutate(TE_perc  = TEsize/gsize) %>%
+  mutate(sat_perc  = Satsize/gsize) %>%
+  mutate(perc_size  = 1 -(TE_perc+sat_perc)) 
+
+thaliana_size_distribution <- thaliana_size_distribution[,c(1,5:7)] %>%  tidyr::pivot_longer(!Accession, names_to = "type", values_to = "perc")
+
+thaliana_size_distribution %>%
+  ggplot(aes(x=Accession, y=perc, fill=type)) + 
+  geom_col() +
+  scale_fill_manual(values = c("#e7e1ef", "#c994c7", "#dd1c77")) + 
+  scale_y_continuous(limits = c(0,1)) +
+  theme_light()
+
+```
+
+# Overall TEs:
+```{r}
+
+a <- pangenome_TE_annotation %>% group_by(Accession,Feature_reduced) %>%  
+  tally()  %>%  
+  ggplot(aes(x=reorder(Accession, n), y=n,fill=Feature_reduced)) + 
+  geom_col() + 
+  ylab("TE number") + 
+  xlab("") + 
+  scale_fill_manual(values = TE_colors_reduced) + 
+  theme_light(base_size = 20) +
+  coord_flip()+ labs(fill = "")
+
+b <- pangenome_TE_annotation %>% group_by(Accession,Feature_reduced) %>%  
+  dplyr::summarise(total_length = sum(TE_length)) %>%   
+  ggplot(aes(x=reorder(Accession, total_length), y=total_length/10^6,fill=Feature_reduced)) + 
+  geom_col() + 
+  ylab("TE Mbp") + 
+  xlab("") + 
+  scale_fill_manual(values = TE_colors_reduced) + 
+  theme_light(base_size = 20) +
+  coord_flip() + labs(fill = "")
+
+(a/b) + plot_layout(guides = "collect")
+
+```
+
+
+```{r}
+
+pangenome_TE_annotation %>%  
+  filter(Annotation == "DENOVO") %>% 
+  group_by(Accession, TEfam) %>%  
+  tally()  %>%  
+  filter( n > 1) %>%   
+  group_by(TEfam) %>%  
+  tally() %>%   
+  ggplot(aes(x=n)) +  
+  geom_histogram(binwidth = 1) +
+  xlab("Number of Accessions") +
+  ylab("Number of TE families") +
+  theme_light(base_size = 15) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 18))
+  
+```
+
+
+
+#Helitron visu:
+
+
+```{r}
+
+pangenome_TE_annotation %>%  filter(Feature == "RC/Helitron") %>%  nrow()
+
+pangenome_TE_annotation %>%  
+    filter(Feature == "RC/Helitron") %>%  filter(Annotation != "TAIR10") %>%  nrow()
+
+pangenome_TE_annotation %>%  
+     filter(Feature == "RC/Helitron") %>%  filter(Annotation == "TAIR10") %>%  nrow()
+
+
+
+pangenome_TE_annotation %>%  filter(Feature == "RC/Helitron") %>%  
+  ggplot(aes(x=length)) + 
+  geom_histogram() + 
+  theme_light() + 
+  facet_grid(~Annotation)
+
+
+pangenome_TE_annotation %>%  
+  filter(Feature == "RC/Helitron") %>%  
+  group_by(TEfam, Annotation,PAV, EAhelitronOverlap) %>%  
+  tally()
+
+pangenome_TE_annotation %>%  
+  filter(Feature == "RC/Helitron") %>%  
+  group_by(TEfam, Annotation) %>%  
+  tally()
+
+```
+
+
+
+```{r}
+pangenome_TE_annotation %>% group_by(Accession,Feature) %>%  
+  tally()  %>%
+  ggplot(aes(x=Accession, y=n)) + 
+  geom_col(aes(color=Feature), fill="white") + 
+  theme_light()
+
+```
+
+
+
+
+## TE phylogenie of the TElib
+
+```{r}
+
+pangenome_TE_phylo  <-  vroom("/ebio/abt6_projects7/diffLines_20/data/TE_annotation/TEsorter/TElib/pangenome.TElib.newTEfams.fa.rexdb-plant.cls.tsv")
+
+pangenome_TE_phylo  <- pangenome_TE_phylo %>% 
+  mutate(TEfam = ifelse(grepl("AT.TE",TEfam), str_remove(TEfam, "AT.TE[0-9]+_"), TEfam)) %>% 
+  mutate(TEfam = str_remove(TEfam, "#.*$"))  
+
+pangenome_TE_phylo <- pangenome_TE_phylo  %>%  unique()
+
+
+pangenome_TE_phylo_filtered <- pangenome_TE_phylo %>%
+    group_by(TEfam, Order, Superfamily,  Clade) %>%  dplyr::count(TEfam, sort =T) %>%  slice(1) %>%
+    select(-n) %>%  #filter(Superfamily != "unknown")
+
+
+pangenome_TE_phylo %>%
+    group_by(TEfam, Order, Superfamily,  Clade) %>%  dplyr::count(TEfam, sort =T) %>%  slice(1) %>%
+    select(-n) %>% fillter(Order != "TIR" && Order != "LTR")
+
+
+library(RColorBrewer)
+
+pangenome_TE_phylo_filtered  %>%  
+  group_by(Superfamily,Clade) %>%  
+  tally() %>%  
+  ggplot(aes(x=Superfamily,y=n, fill=Clade)) + 
+  geom_col() + 
+  theme_light(base_size = 15)  +
+  xlab("") +
+  ylab("# TE models") + 
+  scale_fill_manual( values = colorRampPalette(brewer.pal(name="Set2", n = 10))(20))
+
+
+
+clade_bad <-  c("Bryco", "Gymco-IV", "Tcn1", "Ogre")
+
+Ty3_plot <-  pangenome_TE_phylo_filtered  %>%   
+    filter(Order == "LTR")  %>% 
+    filter( !Clade %in% clade_bad) %>% 
+    group_by(Superfamily,Clade) %>%  
+    tally() %>%  
+    mutate(Superfamily = ifelse(Superfamily == "Copia", "Ty3/Copia", "Ty1/Gypsy")) %>% 
+    filter(Superfamily == "Ty3/Copia") %>% 
+    ggplot(aes(x=Clade,y=n)) + 
+    geom_col() + 
+    theme_light(base_size = 20)  +
+    xlab("") +
+    ylab("# TE models") + 
+    facet_wrap(~Superfamily) + coord_flip() +
+    theme( legend.position = "none", strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+
+
+Ty1_plot <-  pangenome_TE_phylo_filtered  %>%   filter(Order == "LTR")  %>% 
+    group_by(Superfamily,Clade) %>%  
+    tally() %>%  
+    mutate(Superfamily = ifelse(Superfamily == "Copia", "Ty3/Copia", "Ty1/Gypsy")) %>% 
+    filter(Superfamily == "Ty1/Gypsy") %>% 
+    filter( !Clade %in% clade_bad) %>% 
+    ggplot(aes(x=Clade,y=n)) + 
+    geom_col() + 
+    theme_light(base_size = 20)  +
+    xlab("") +
+    ylab("# TE models") + 
+    facet_wrap(~Superfamily) + coord_flip() +
+    theme( legend.position = "none", strip.background = element_blank(),
+  strip.text.x = element_text(color = "grey40"))
+  
+Ty1_plot + Ty3_plot
+```
+
+
+
+```{r}
+phylo_anno_gff <- dplyr::left_join(pangenome_TE_annotation, pangenome_TE_phylo_filtered[,c(1,4)], by = "TEfam")
+
+write.table(file = "/ebio/abt6_projects7/diffLines_20/data/TE_annotation/TEsorter/TElib/temp_phylo.gff3", x = phylo_anno_gff, 
+            sep = "\t", quote = FALSE ,row.names = FALSE)
+```
+

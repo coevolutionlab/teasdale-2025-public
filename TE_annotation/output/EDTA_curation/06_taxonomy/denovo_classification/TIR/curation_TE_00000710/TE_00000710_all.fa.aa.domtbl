@@ -1,0 +1,13 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                        accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----              -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      TE_00000710_all.fa.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm
+# Option settings: hmmscan --domtblout TE_00000710_all.fa.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Yuan_and_Wessler.PNAS.TIR.hmm TE_00000710_all.fa.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/denovo_classification/TIR/lolis
+# Date:            Wed Aug 30 16:27:31 2023
+# [ok]

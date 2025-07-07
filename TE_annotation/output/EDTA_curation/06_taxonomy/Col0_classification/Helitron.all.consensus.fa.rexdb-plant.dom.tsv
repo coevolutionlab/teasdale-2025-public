@@ -1,0 +1,10 @@
+#id	length	evalue	coverge	probability	score
+HELITRON1|Class_II/Subclass_2/Helitron:Helitron-HEL2	167	2.9e-78	35.9	0.99	0.57
+HELITRON2|Class_II/Subclass_2/Helitron:Helitron-HEL1	288	4.5e-62	39.0	0.89	0.38
+HELITRON2|Class_II/Subclass_2/Helitron:Helitron-HEL2	140	2e-36	28.6	0.93	0.26
+HELITRON3|Class_II/Subclass_2/Helitron:Helitron-HEL1	343	2.6e-104	51.9	0.89	0.64
+HELITRON3|Class_II/Subclass_2/Helitron:Helitron-HEL2	173	8e-63	35.0	0.97	0.46
+HELITRON4|Class_II/Subclass_2/Helitron:Helitron-HEL1	235	2.7e-84	39.2	0.98	0.52
+HELITRON4|Class_II/Subclass_2/Helitron:Helitron-HEL2	278	6.9e-110	58.8	0.96	0.8
+HELITRON5|Class_II/Subclass_2/Helitron:Helitron-HEL1	274	1.5e-53	40.3	0.9	0.33
+HELITRON5|Class_II/Subclass_2/Helitron:Helitron-HEL2	435	1.5e-111	83.8	0.91	0.81

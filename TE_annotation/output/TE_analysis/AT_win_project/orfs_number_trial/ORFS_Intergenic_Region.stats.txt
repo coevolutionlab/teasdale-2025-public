@@ -1,0 +1,2 @@
+file                         format  type       num_seqs        sum_len  min_len  avg_len  max_len
+ORFS_Intergenic_Region.orfs  FASTA   Protein  35,045,694  2,792,837,766       50     79.7    1,666

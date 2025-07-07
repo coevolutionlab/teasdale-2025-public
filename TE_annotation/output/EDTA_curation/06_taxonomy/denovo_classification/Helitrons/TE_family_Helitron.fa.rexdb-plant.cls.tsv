@@ -1,0 +1,70 @@
+#TE	Order	Superfamily	Clade	Complete	Strand	Domains
+TE_00000457#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00000511#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00000534#DNA/Helitron	LTR	Gypsy	Athila	no	-	PROT|Athila
+TE_00000544#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00000563#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00000649#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00000734#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL2|Helitron
+TE_00000769#DNA/Helitron	LINE	unknown	unknown	unknown	+	RT|LINE
+TE_00000800#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL2|Helitron
+TE_00000823#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00001006#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00001013#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00001053#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00001057#DNA/Helitron	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+TE_00001102#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00001282#DNA/Helitron	LTR	Gypsy	Retand	no	+	aRH|Retand
+TE_00001303#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00001316#DNA/Helitron	LTR	Copia	Tork	no	-	GAG|Tork PROT|Tork
+TE_00001329#DNA/Helitron	TIR	hAT	unknown	unknown	-	TPase|hAT
+TE_00001417#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL2|Helitron
+TE_00001460#DNA/Helitron	LTR	Gypsy	Athila	no	-	PROT|Athila
+TE_00001486#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00001505#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00002337#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00002572#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+TE_00003418#DNA/Helitron	LTR	Copia	Ale	no	+	PROT|Ale
+TE_00003535#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+cluster_0#DNA/Helitron	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_1#DNA/Helitron	mixture	mixture	unknown	unknown	?	TPase|MuDR_Mutator GAG|TAR
+cluster_100#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron HEL2|Helitron
+cluster_112#DNA/Helitron	mixture	mixture	unknown	unknown	-	HEL1|Helitron TPase|MuDR_Mutator
+cluster_1133#DNA/Helitron	LINE	unknown	unknown	unknown	-	RH|LINE
+cluster_114#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron HEL2|Helitron
+cluster_121#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+cluster_13#DNA/Helitron	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_137#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL1|Helitron HEL2|Helitron
+cluster_143#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron HEL2|Helitron
+cluster_157#DNA/Helitron	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_16#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL1|Helitron HEL2|Helitron
+cluster_164#DNA/Helitron	TIR	hAT	unknown	unknown	+	TPase|hAT
+cluster_169#DNA/Helitron	LTR	Copia	Tork	yes	-	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_17#DNA/Helitron	LTR	Copia	Ale	yes	+	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_172#DNA/Helitron	LTR	Copia	Ale	yes	-	GAG|Ale PROT|Ale INT|Ale RT|Ale RH|Ale
+cluster_2#DNA/Helitron	LTR	Gypsy	Reina	yes	-	GAG|Reina PROT|Reina RT|Reina RH|Reina INT|Reina CHD|Reina
+cluster_20#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL1|Helitron HEL2|Helitron
+cluster_21#DNA/Helitron	LTR	Copia	Tork	no	+	TPase|PIF_Harbinger GAG|Tork PROT|Tork RT|Tork RH|Tork
+cluster_22#DNA/Helitron	LTR	Gypsy	Athila	no	+	INT|Athila GAG|Athila PROT|Athila
+cluster_23#DNA/Helitron	LTR	Copia	Tork	yes	+	GAG|Tork PROT|Tork INT|Tork RT|Tork RH|Tork
+cluster_27#DNA/Helitron	LINE	unknown	unknown	unknown	-	ENDO|LINE RT|LINE RH|LINE
+cluster_274#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+cluster_31#DNA/Helitron	TIR	PIF_Harbinger	unknown	unknown	-	TPase|PIF_Harbinger
+cluster_32#DNA/Helitron	LINE	unknown	unknown	unknown	-	ENDO|LINE RT|LINE RH|LINE
+cluster_4#DNA/Helitron	Helitron	unknown	unknown	unknown	+	HEL1|Helitron HEL2|Helitron GAG|Athila PROT|Athila
+cluster_53#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron HEL2|Helitron
+cluster_56#DNA/Helitron	LTR	Gypsy	Athila	no	?	CHDCR|CRM PROT|Athila RT|Athila RH|Athila INT|Athila
+cluster_60#DNA/Helitron	LTR	Gypsy	Retand	no	+	GAG|Retand PROT|Retand aRH|Retand RT|LINE
+cluster_63#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron HEL2|Helitron
+cluster_66#DNA/Helitron	TIR	hAT	unknown	unknown	-	TPase|hAT
+cluster_68#DNA/Helitron	mixture	mixture	unknown	unknown	+	HEL1|Helitron TPase|PIF_Harbinger
+cluster_70#DNA/Helitron	TIR	MuDR_Mutator	unknown	unknown	+	TPase|MuDR_Mutator
+cluster_73#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL2|Helitron
+cluster_770#DNA/Helitron	Helitron	unknown	unknown	unknown	-	HEL1|Helitron
+cluster_821#DNA/Helitron	LINE	unknown	unknown	unknown	-	RT|LINE
+cluster_90#DNA/Helitron	LTR	Gypsy	Reina	no	-	INT|Reina CHD|Reina
+cluster_940#DNA/Helitron	LINE	unknown	unknown	unknown	+	RH|LINE
+TE_00000463#DNA/Helitron	LINE	unknown	unknown	none	?	none
+TE_00000503#DNA/Helitron	LINE	unknown	unknown	none	?	none
+TE_00000744#DNA/Helitron	LINE	unknown	unknown	none	?	none
+TE_00001196#DNA/Helitron	LINE	unknown	unknown	none	?	none

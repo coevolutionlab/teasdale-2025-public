@@ -1,0 +1,52 @@
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                   accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----         -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.1.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm
+# Option settings: hmmscan --domtblout ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.1.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.1.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/denovo_classification/Lines
+# Date:            Fri Jul 28 11:26:52 2023
+# [ok]
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                   accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----         -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.2.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm
+# Option settings: hmmscan --domtblout ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.2.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.2.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/denovo_classification/Lines
+# Date:            Fri Jul 28 11:26:52 2023
+# [ok]
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                   accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----         -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.3.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm
+# Option settings: hmmscan --domtblout ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.3.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.3.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/denovo_classification/Lines
+# Date:            Fri Jul 28 11:26:52 2023
+# [ok]
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                   accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----         -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SCAN
+# Query file:      ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.4.fasta.aa
+# Target file:     /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm
+# Option settings: hmmscan --domtblout ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.4.fasta.aa.domtbl --noali --notextw --nobias /ebio/abt6/acontreras/miniconda3/lib/python3.9/site-packages/TEsorter/database/Kapitonov_et_al.GENE.LINE.hmm ./tmp-e23d6548-2d28-11ee-9fa9-002590bc431c/chunk.4.fasta.aa 
+# Current dir:     /tmp/global2/acontreras/difflines_annex_adri/adri-annex/TE_annotation/TE_annotation/output/EDTA_curation/06_taxonomy/denovo_classification/Lines
+# Date:            Fri Jul 28 11:26:52 2023
+# [ok]

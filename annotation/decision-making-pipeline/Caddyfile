@@ -1,0 +1,9 @@
+{
+	admin off
+}
+http://localhost:4020 {
+	file_server {
+		root ./manual_annotation
+        browse
+	}
+}

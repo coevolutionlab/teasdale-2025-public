@@ -1,0 +1,5 @@
+#id	length	evalue	coverge	probability	score
+ATSINE4|AtSB6	432	1.4e-43	72.5	0.77	0.39
+RathE1_cons|AtSB2	250	7.2e-06	83.9	0.57	0.11
+RathE2_cons|AtSB3	459	4e-47	99.7	0.74	0.5
+RathE3_cons|AtSB4	195	7.5e-26	90.7	0.82	0.52
