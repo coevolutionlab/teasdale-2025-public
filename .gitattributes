@@ -1,0 +1,10 @@
+* annex.largefiles=largerthan=100kb
+*.sh annex.largefiles=nothing
+*.bash annex.largefiles=nothing
+*.slurm annex.largefiles=nothing
+*.txt annex.largefiles=largerthan=50kb
+*.Rmd annex.largefiles=nothing
+*.R annex.largefiles=nothing
+*.py annex.largefiles=nothing
+*.rules annex.largefiles=nothing
+*.ipynb annex.largefiles=largerthan=2Mb
